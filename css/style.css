@@ -6,7 +6,7 @@
 }
 
 body {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   background-image: grey url("images/header-background-mobile.png");
 }
 
@@ -25,6 +25,10 @@ nav ul {
 .links li {
   list-style: none;
   margin-right: 10px;
+}
+
+.logo a, a:visited {
+  text-decoration: none;
 }
 
 .links li a {
@@ -48,10 +52,6 @@ nav ul {
   text-align: center;
 }
 
-.logo a, a:visited {
-  text-decoration: none;
-}
-
 .headline {
   margin-top: 114px;
   display: flex;
@@ -72,7 +72,7 @@ h1 {
   line-height: 52px;
   display: flex;
   align-items: center;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   color: #172b4d;
 }
 
@@ -84,7 +84,7 @@ h4 {
   flex-grow: 0;
   margin: 12px 24px 12px 24px;
   align-self: flex-start;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
 }
 
 .social {
