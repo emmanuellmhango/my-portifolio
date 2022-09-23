@@ -7,6 +7,7 @@
 
 body {
   font-family: 'Poppins';
+  background-image: grey url("images/header-background-mobile.png");
 }
 
 nav {
@@ -47,11 +48,14 @@ nav ul {
   text-align: center;
 }
 
+.logo a, a:visited {
+  text-decoration: none;
+}
+
 .headline {
   margin-top: 114px;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
   flex-wrap: wrap;
   background-image: url(../images/header-shape.png);
@@ -63,6 +67,7 @@ nav ul {
 h1 {
   margin: 0 24px 0 24px;
   font-weight: 700;
+  font-weight: bold;
   font-size: 40px;
   line-height: 52px;
   display: flex;
@@ -78,12 +83,19 @@ h4 {
   color: #7f8cff;
   flex-grow: 0;
   margin: 12px 24px 12px 24px;
+  align-self: flex-start;
+  font-family: 'Poppins';
+}
+
+.social {
+  list-style: none;
+  display: flex;
+  margin-left: 24px;
+  padding: 0;
 }
 
 .social li {
-  list-style: none;
-  display: inline;
-  margin: 12px 20px 136px -14px;
+  padding-right: 15px;
 }
 
 .description {
@@ -92,5 +104,5 @@ h4 {
   font-size: 16px;
   line-height: 24px;
   color: #344563;
-  margin: 12px 24px 50px 24px;
+  margin: 12px 24px 12px 24px;
 }
