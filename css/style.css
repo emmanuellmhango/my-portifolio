@@ -86,13 +86,15 @@ nav ul {
 }
 
 .headline {
-  margin-top: 114px;
-  padding-bottom: 136px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  height: auto;
+  margin-top: 114px;
+  padding-bottom: 136px;
+}
+
+.headline-background {
+  background: url("../images/header-shape.png") no-repeat center bottom/cover;
+  background-size: auto;
 }
 
 .introduction {
@@ -254,7 +256,7 @@ h4 {
   background: #ebebff;
   border-radius: 8px;
   padding: 4px 12px;
-  margin-top: 12px;
+  margin-top: 16px;
   margin-right: 8px;
 }
 
@@ -274,7 +276,7 @@ h4 {
 .works-see-more {
   margin-top: 14px;
   margin-left: 0;
-  width: 200px;
+  width: 180px;
   height: 48px;
   justify-content: flex-start;
   padding: 12px;
@@ -344,17 +346,6 @@ h4 {
   line-height: 20px;
   margin-left: 10px;
   margin-bottom: 20px;
-}
-
-.my-frameworks {
-  display: flex;
-  justify-content: space-between;
-  margin: 36px 60px 20px 14px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 24px;
 }
 
 .my-other-skills {
