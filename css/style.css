@@ -40,6 +40,7 @@ nav ul {
   align-items: center;
   vertical-align: baseline;
 }
+
 .header-top .time {
   margin-top: 5px;
   flex-grow: 2;
@@ -248,7 +249,7 @@ h4 {
   font-size: 12px;
   line-height: 16px;
   letter-spacing: 0.03em;
-  color: #6070FF;
+  color: #6070ff;
   flex-grow: 0;
   background: #ebebff;
   border-radius: 8px;
@@ -298,7 +299,7 @@ h4 {
 
 .about-me-skills {
   list-style: none;
-  margin: 0 24px 0 24px ;
+  margin: 0 24px 0 24px;
   padding: 0;
 }
 
@@ -437,7 +438,6 @@ h4 {
   font-size: 40px;
   line-height: 52px;
   text-align: center;
-  text-align: center;
   color: #fff;
   margin-top: 103px;
 }
@@ -472,7 +472,8 @@ h4 {
   margin-bottom: 50px;
 }
 
-.get-in-touch:hover, .works-see-more:hover {
+.get-in-touch:hover, 
+.works-see-more:hover {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -486,11 +487,12 @@ h4 {
   gap: 10px;
   height: 48px;
   background: #6070ff;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
 
-.get-in-touch:active, .works-see-more:active {
+.get-in-touch:active, 
+.works-see-more:active {
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
@@ -504,6 +506,6 @@ h4 {
   gap: 10px;
   height: 48px;
   background: #2230d2;
-  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
 }
