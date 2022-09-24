@@ -210,7 +210,7 @@ h4 {
   justify-content: flex-start;
   padding: 10px;
   margin-left: 0;
-  margin-right:10px;
+  margin-right: 10px;
   background: #ebebff;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
@@ -288,7 +288,7 @@ h4 {
 
 .align-language-text {
   margin-top: 20px;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
   font-size: 15px;
@@ -301,7 +301,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 36px 60px 20px 14px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -312,7 +312,7 @@ h4 {
   display: flex;
   justify-content: space-between;
   margin: 20px 60px 20px 14px;
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 20px;
@@ -331,7 +331,7 @@ h4 {
   display: flex;
   flex-direction: column;
   width: 100%;
-  background: #6070FF;
+  background: #6070ff;
   border-top-left-radius: 100px;
 }
 
@@ -374,7 +374,7 @@ h4 {
 }
 
 .primary-text {
-  font-family: 'Poppins';
+  font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 40px;
