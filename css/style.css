@@ -505,4 +505,22 @@ h4 {
   float: left;
   color: #6070ff;
   background: #ebebff;
+  border-radius: 5px;
+  margin-left: 5px;
+  height: 24px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  padding: 4px 12px;
+  margin-top: 16px;
+  margin-right: 5px;
+}
+
+.clear-float::after {
+  content: "";
+  clear: both;
+  display: table;
 }
