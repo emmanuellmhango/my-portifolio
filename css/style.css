@@ -517,7 +517,7 @@ h4 {
   display: none;
 }
 
-@media (min-width:768px) {
+@media (min-width: 768px) {
   .header-top,
   .choose-screen {
     display: none;
@@ -588,14 +588,14 @@ h4 {
     font-weight: 700;
     font-size: 40px;
     line-height: 52px;
-    margin-top: 10px;
+    margin-top: 48px;
     height: 46px;
     width: 496px;
   }
 
   .wide-screen-view {
     display: block;
-    width: 100%; 
+    width: 100%;
     height: 448px;
     margin-bottom: 24px;
   }
@@ -639,10 +639,6 @@ h4 {
     margin-bottom: 152px;
   }
 
-  .my-works-project-title {
-    margin-top: 48px;
-  }
-
   .wide-screen-divide {
     height: 50px
   }
@@ -655,7 +651,7 @@ h4 {
     background-color: #4053fc;
     color: #fff;
   }
-
+  
   .wide-screen-title {
     display: block;
   }
@@ -725,7 +721,7 @@ h4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0px;
+    padding: 0;
     gap: 24px;
     width: 801px;
     height: auto;
@@ -735,6 +731,6 @@ h4 {
 
   .input-type {
     width: 447px;
-  } 
-
+  }
+  
 }
