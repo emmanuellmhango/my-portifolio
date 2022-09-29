@@ -640,18 +640,18 @@ h4 {
   }
 
   .wide-screen-divide {
-    height: 50px
+    height: 50px;
   }
 
   .project-languages {
     margin-top: 25px;
   }
 
-  .screen-view-button{
+  .screen-view-button {
     background-color: #4053fc;
     color: #fff;
   }
-  
+
   .wide-screen-title {
     display: block;
   }
@@ -732,5 +732,4 @@ h4 {
   .input-type {
     width: 447px;
   }
-  
 }
