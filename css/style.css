@@ -295,6 +295,7 @@ h4 {
 
 .small-screen-view {
   display: block;
+  margin: 0;
 }
 
 .small-screen-view-languages {
