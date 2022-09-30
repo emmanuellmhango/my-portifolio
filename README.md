@@ -16,7 +16,7 @@
 
 ### My Contacts
 
-> Insta - @mw_imma](https://www.instagram.com/mw_imma) | [emmanuellmhango@gmail.com](mailto://emmanuellmhango@gmail.com)
+> Insta - [@mw_imma](https://www.instagram.com/mw_imma) | [emmanuellmhango@gmail.com](mailto://emmanuellmhango@gmail.com)
 
 
 #### 📝 License
