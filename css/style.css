@@ -35,10 +35,23 @@ li.links-transition {
 
 li.links-transition:hover,
 li.links-transition:focus {
+  padding: 5%;
+  height: 48px;
   background-color: #ebebff;
-  padding: 2%;
   border-radius: 8px;
   border: 1px solid #6070ff;
+  animation: shake;
+  animation-duration: 1s;
+}
+
+@keyframes shake {
+  from {
+    
+  }
+
+  to {
+    transition: all 500ms ease-in-out;
+  }
 }
 
 .header-wrapper {
@@ -96,6 +109,18 @@ li.links-transition:focus {
   color: #6070ff;
   align-items: center;
   text-align: center;
+  animation: rotate-logo;
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes rotate-logo {
+  from{
+
+  }
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .headline {
