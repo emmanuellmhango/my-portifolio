@@ -29,6 +29,18 @@ nav ul {
   display: none;
 }
 
+li.links-transition {
+  transition: all 0.5s ease-out;
+}
+
+li.links-transition:hover,
+li.links-transition:focus {
+  background-color: #ebebff;
+  padding: 2%;
+  border-radius: 8px;
+  border: 1px solid #6070ff;
+}
+
 .header-wrapper {
   background-color: #fff;
 }
@@ -331,6 +343,7 @@ h4 {
   letter-spacing: 0.03em;
   text-align: center;
   color: #396df2;
+  transition: all 0.5s ease-out;
 }
 
 .actual-languages {
@@ -501,6 +514,7 @@ h4 {
   color: #6070ff;
   border: 1px solid #7f8cff;
   margin-bottom: 50px;
+  transition: all 0.5s ease-out;
 }
 
 .wide-screen-view-title {
