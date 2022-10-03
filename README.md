@@ -13,7 +13,8 @@
 ** The project is built using HTML and CSS. Download the files and unzip them to any location on your computer.**
 ** Open the index.html using any of your favorite browser.**
 
-
+## Web Link
+**[Click here to go to the website](https://emmanuellmhango.github.io/my-portifolio/)**
 ### My Contacts
 
 > Insta - [@mw_imma](https://www.instagram.com/mw_imma) | [emmanuellmhango@gmail.com](mailto://emmanuellmhango@gmail.com)
