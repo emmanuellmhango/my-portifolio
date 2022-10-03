@@ -46,7 +46,7 @@ li.links-transition:focus {
 
 @keyframes shake {
   from {
-    
+    transition: all 0.5s ease-out;
   }
 
   to {
@@ -115,9 +115,10 @@ li.links-transition:focus {
 }
 
 @keyframes rotate-logo {
-  from{
-
+  from {
+    transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
