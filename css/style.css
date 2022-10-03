@@ -114,6 +114,8 @@ li.links-transition:focus {
   animation-iteration-count: 1;
 }
 
+/* rotate-logo animation*/
+
 @keyframes rotate-logo {
   from {
     transform: rotate(0deg);
