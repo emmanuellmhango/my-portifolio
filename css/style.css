@@ -19,6 +19,11 @@ nav {
   height: 72px;
 }
 
+.menu-links-item > a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .home-wrapper {
   background-color: #fff;
   border-bottom-left-radius: 100px;
@@ -265,11 +270,6 @@ h4 {
 .menu-links-item {
   color: #fff;
   margin-bottom: 40px;
-}
-
-.menu-links-item > a {
-  text-decoration: none;
-  color: #fff;
 }
 
 .works-image {
