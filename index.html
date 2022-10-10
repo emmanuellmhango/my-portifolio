@@ -1,20 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--awesome font to get the icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    <!--custom made css -->
-    <link rel="stylesheet" href="css/style.css">    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--custom made css -->
+    <link rel="stylesheet" href="css/style.css">
     <title>My Portifolio</title>
 </head>
+
 <body>
     <!--Welcome Page Start-->
     <section class="home-wrapper">
-        <!--
-            modal here
-        -->
+        <div id="myMenuModal" class="menu-modal">
+            <span class="menu-close" id="closeBtn">&times;</span>
+            <div class="menu-modal-content">
+                <ul class="menu-links">
+                    <li class="menu-links-item"><a href="#portfolio">Portfolio</a></li>
+                    <li class="menu-links-item"><a href="#about">About</a></li>
+                    <li class="menu-links-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+
         <header class="header-wrapper">
             <section class="header-top">
                 &nbsp;
@@ -27,19 +38,21 @@
                         <li class="links-transition"><a href="#">About</a></li>
                         <li class="links-transition"><a href="#">Contact</a></li>
                     </ul>
-                    <i class="fa fa-bars fa-lg choose-screen" id="mobile-menu" style="color: #6070FF;"></i>&nbsp;  
+                    <i class="fa fa-bars fa-lg choose-screen" id="mobile-menu" style="color: #6070FF;"></i>&nbsp;
                 </nav>
             </section>
         </header>
         <section class="headline headline-background">
             <h1 class="introduction">I'm Emmanuel<br /> glad to see you</h1>
-            <p class="description">I’m a software developer! I can help you build a product , feature or website Look 
-                through some of my work and experience! If you like what you see and have a project you need coded, don’t 
-                hestiate to contact me.</p>    
+            <p class="description">I’m a software developer! I can help you build a product , feature or website Look
+                through some of my work and experience! If you like what you see and have a project you need coded,
+                don’t
+                hestiate to contact me.</p>
             <h4 class="connect">LETS CONNECT</h4>
             <ul class="social">
                 <li><a href="#"><img src="images/twit.png" alt="Twitter Logo"></a></li>
-                <li><a href="#"><img src="images/Vector.png" alt="Linkedin Logo"><img src="images/in.png" alt="Linkedin Logo"></a></li>
+                <li><a href="#"><img src="images/Vector.png" alt="Linkedin Logo"><img src="images/in.png"
+                            alt="Linkedin Logo"></a></li>
                 <li><a href="#"><img src="images/m.png" alt="Mi Logo"></a></li>
                 <li><a href="#"><img src="images/cat.png" alt="Guthub Logo"></a></li>
                 <li><a href="#"><img src="images/peace.png" alt="Alison Logo"></a></li>
@@ -51,7 +64,8 @@
     <section class="projects-gid-container" id="portfolio">
         <div class="my-works">
             <figure class="img-wide-screen">
-                <img src="images/tonic-project.png" class="works-image small-screen-view " alt="Tonic App Screenshot" width="100%"> 
+                <img src="images/tonic-project.png" class="works-image small-screen-view " alt="Tonic App Screenshot"
+                    width="100%">
                 <img src="images/Snapshoot Portfolio.png" alt="Tonic project image Screenshot" class="wide-screen-view">
             </figure>
             <div class="wider-screen-project-definition">
@@ -73,16 +87,17 @@
                         <li class="coding-languages">html</li>
                         <li class="coding-languages">css</li>
                         <li class="coding-languages">javascript</li>
-                    </ul>       
+                    </ul>
                 </section>
                 <section class="project-more">
                     <button class="works-see-more">See Project</button>
-                </section>  
+                </section>
             </div>
         </div>
         <div class="my-works">
             <figure class="img-wide-screen flex-element-order">
-                <img src="images/multi-post-stories-project.jpg" class="works-image small-screen-view" alt="Facebook Project Screenshot" width="100%"> 
+                <img src="images/multi-post-stories-project.jpg" class="works-image small-screen-view"
+                    alt="Facebook Project Screenshot" width="100%">
                 <img src="images/Snapshoot-Portfolio-2.png" alt="Tonic project Screenshot" class="wide-screen-view">
             </figure>
             <div class="wider-screen-project-definition">
@@ -96,9 +111,10 @@
                         <li class="title-header-general">2015</li>
                     </ul>
                     <p class="project-description wide-screen-none">
-                        Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends.                    </p>
+                        Experimental content creation feature that allows users to add to an existing story over the
+                        course of a day without spamming their friends. </p>
                     <p class="description small-screen-view">A daily selection of privately personalized reads;
-                            no accounts or sign-ups required.</p>
+                        no accounts or sign-ups required.</p>
                 </div>
                 <div class="project-languages">
                     <ul class="my-work-languages">
@@ -110,13 +126,15 @@
                 </div>
                 <section class="project-more">
                     <button class="works-see-more">See Project</button>
-                </section>  
+                </section>
             </div>
         </div>
         <div class="my-works">
             <figure class="img-wide-screen">
-                <img src="images/tonic-2-project.jpg" class="works-image small-screen-view" alt="Tonic App Screenshot" width="100%"> 
-                <img src="images/Snapshoot-Portfolio-3.png" alt="Facebook 360 project Screenshot" class="wide-screen-view">
+                <img src="images/tonic-2-project.jpg" class="works-image small-screen-view" alt="Tonic App Screenshot"
+                    width="100%">
+                <img src="images/Snapshoot-Portfolio-3.png" alt="Facebook 360 project Screenshot"
+                    class="wide-screen-view">
             </figure>
             <div class="wider-screen-project-definition">
                 <div class="works-description">
@@ -130,11 +148,11 @@
                         <li class="title-header-general">2015</li>
                     </ul>
                     <p class="project-description wide-screen-none">
-                        Exploring the future of media in Facebook's first Virtual 
-                        Reality app; a place to discover and enjoy 360 photos and 
+                        Exploring the future of media in Facebook's first Virtual
+                        Reality app; a place to discover and enjoy 360 photos and
                         videos on Gear VR.</p>
                     <p class="description small-screen-view">A daily selection of privately personalized reads;
-                         no accounts or sign-ups required.</p>
+                        no accounts or sign-ups required.</p>
                 </div>
                 <section class="project-languages">
                     <ul class="my-work-languages">
@@ -146,13 +164,16 @@
                 </section>
                 <section class="project-more">
                     <button class="works-see-more screen-view-button">See Project</button>
-                </section>  
+                </section>
             </div>
         </div>
         <div class="my-works">
             <figure class="img-wide-screen flex-element-order">
-                <img src="images/multi-post-stories-2-project.jpg" class="works-image  small-screen-view  small-screen-view-none" alt="Tonic App Screenshot" width="100%">  
-                <img src="images/Snapshoot-Portfolio-4.png" alt="Facebook 360 project Screenshot" class="wide-screen-view">
+                <img src="images/multi-post-stories-2-project.jpg"
+                    class="works-image  small-screen-view  small-screen-view-none" alt="Tonic App Screenshot"
+                    width="100%">
+                <img src="images/Snapshoot-Portfolio-4.png" alt="Facebook 360 project Screenshot"
+                    class="wide-screen-view">
             </figure>
             <div class="wider-screen-project-definition">
                 <div class="works-description">
@@ -166,9 +187,11 @@
                         <li class="title-header-general">2015</li>
                     </ul>
                     <p class="project-description wide-screen-none">
-                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.
+                        A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive
+                        computer: your car.
                     </p>
-                    <p class="description small-screen-view">A daily selection of privately personalized reads; no accounts or sign-ups required.</p>
+                    <p class="description small-screen-view">A daily selection of privately personalized reads; no
+                        accounts or sign-ups required.</p>
                 </div>
                 <section class="project-languages">
                     <ul class="my-work-languages">
@@ -180,8 +203,8 @@
                 </section>
                 <section class="project-more">
                     <button class="works-see-more">See Project</button>
-                </section> 
-            </div> 
+                </section>
+            </div>
         </div>
     </section>
     <!--My projects end//-->
@@ -190,70 +213,84 @@
         <section class="headline-last-part" id="about">
             <div class="wide-screen-col-about">
                 <h1 class="introduction-about-myself">About <br /> Myself</h1>
-                <p class="description">I’m a software developer! I can help you build a product , feature or website Look 
-                    through some of my work and experience! If you like what you see and have a project you need coded, don’t 
-                    hesitate to contact me.</p>    
+                <p class="description">I’m a software developer! I can help you build a product , feature or website
+                    Look
+                    through some of my work and experience! If you like what you see and have a project you need coded,
+                    don’t
+                    hesitate to contact me.</p>
                 <h4 class="connect">LETS CONNECT</h4>
                 <ul class="social">
                     <li><a href="#"><img src="images/twit.png" alt="Twitter Logo"></a></li>
-                    <li><a href="#"><img src="images/Vector.png" alt="Linkedin Logo"><img src="images/in.png" alt=""></a></li>
+                    <li><a href="#"><img src="images/Vector.png" alt="Linkedin Logo"><img src="images/in.png"
+                                alt=""></a></li>
                     <li><a href="#"><img src="images/m.png" alt="Mi Logo"></a></li>
                     <li><a href="#"><img src="images/cat.png" alt="Guthub Logo"></a></li>
                     <li><a href="#"><img src="images/peace.png" alt="Alison Logo"></a></li>
                 </ul>
                 <section class="project-more" style="margin-left: 14px;">
                     <button class="works-see-more">Get my resume</button>
-                </section> 
+                </section>
             </div>
             <section class="actual-languages">
                 <ul class="about-me-skills">
-                    <li class="my-skills">Languages 
+                    <li class="my-skills">Languages
                         <span class="arrows-right"><i class="fa fa-angle-down fa-lg"></i></span>
                         <ul class="language-list">
                             <li class="programing-languages">
                                 <img src="images/js.png" alt="Javascript Icon" class="language-icons">
-                                <span class="align-language-text">Javascript</span> 
+                                <span class="align-language-text">Javascript</span>
                             </li>
                             <li class="programing-languages">
                                 <img src="images/html.png" alt="HTML Icon" class="language-icons">
-                                <span class="align-language-text">HTML</span> 
+                                <span class="align-language-text">HTML</span>
                             </li>
                             <li class="programing-languages">
                                 <img src="images/css.png" alt="CSS Icon" class="language-icons">
-                                <span class="align-language-text">CSS</span> 
+                                <span class="align-language-text">CSS</span>
                             </li>
                         </ul>
                     </li>
-                    <li class="my-skills">Frameworks 
-                        <span class="arrows-right"><i class="fa fa-angle-right fa-lg"></i></span></li>
-                    <li><div class="line-break"></div></li>
-                    <li class="my-skills">Skills 
-                        <span class="arrows-right"><i class="fa fa-angle-right fa-lg"></i></span></li>
-                    <li><div class="line-break"></div></li>            
-                </ul>     
-            </section>   
+                    <li class="my-skills">Frameworks
+                        <span class="arrows-right"><i class="fa fa-angle-right fa-lg"></i></span>
+                    </li>
+                    <li>
+                        <div class="line-break"></div>
+                    </li>
+                    <li class="my-skills">Skills
+                        <span class="arrows-right"><i class="fa fa-angle-right fa-lg"></i></span>
+                    </li>
+                    <li>
+                        <div class="line-break"></div>
+                    </li>
+                </ul>
+            </section>
         </section>
         <!--About Myself ends-->
         <!--Contact me starts-->
         <section class="contact-me" id="contact">
             <section class="wrapper">
                 <h1 class="primary-text">Contact me</h1>
-                <p class="secondary-text">If you have an application you are interested in developing, a feature that you 
+                <p class="secondary-text">If you have an application you are interested in developing, a feature that
+                    you
                     need built or a project that needs coding. I’d love to help with it </p>
-                <form action="https://formspree.io/f/xqkjqoer" method="post" class="contact-form" >
+                <form action="https://formspree.io/f/xqkjqoer" method="post" class="contact-form">
                     <label for="name" hidden>Name</label>
-                    <input type="text" placeholder=" Your Name" class="input-type small-screen-view" name="name" maxlength="30" required/>
-                    <input type="text" placeholder=" Your Full Name" class="input-type wide-screen-input" name="name" maxlength="30" required/> 
-                    <label for="email" hidden>Email</label>  
-                    <input type="email" placeholder="Your email" class="input-type" name="email" required/>
+                    <input type="text" placeholder=" Your Name" class="input-type small-screen-view" name="name"
+                        maxlength="30" required />
+                    <input type="text" placeholder=" Your Full Name" class="input-type wide-screen-input" name="name"
+                        maxlength="30" required />
+                    <label for="email" hidden>Email</label>
+                    <input type="email" placeholder="Your email" class="input-type" name="email" required />
                     <label for="message" hidden>Message</label>
-                    <textarea  cols="30" placeholder="Please write your message" rows="10" class="input-type-textarea" name="message" maxlength="500" required></textarea>
+                    <textarea cols="30" placeholder="Please write your message" rows="10" class="input-type-textarea"
+                        name="message" maxlength="500" required></textarea>
                     <input type="submit" value="Get in Touch" class="get-in-touch" />
                 </form>
-            </section>        
+            </section>
         </section>
         <!--Contact me ends-->
     </section>
     <script src="js/app.js"></script>
 </body>
+
 </html>
