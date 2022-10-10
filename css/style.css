@@ -131,6 +131,11 @@ li.links-transition:focus {
   padding-bottom: 136px;
 }
 
+.choose-screen:hover {
+  cursor: pointer;
+  display: block;
+}
+
 .headline-last-part {
   display: flex;
   flex-direction: column;
@@ -217,6 +222,54 @@ h4 {
   border: 1px solid #dfe1e6;
   border-radius: 16px;
   justify-content: center;
+}
+
+.menu-close {
+  color: #fff;
+  float: right;
+  font-size: 36px;
+  margin-top: 48px;
+  margin-right: 38px;
+}
+
+.menu-close:hover,
+.menu-close:focus {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-modal {
+  display: none;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(96, 112, 255, 0.95);
+  height: 100vh;
+  position: absolute;
+}
+
+.menu-modal-content {
+  border-top: 106px;
+  color: #fff;
+  margin: 90px 12px 0 12px;
+}
+
+.menu-links {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 44px;
+}
+
+.menu-links-item {
+  color: #fff;
+  margin-bottom: 40px;
+}
+
+.menu-links-item a {
+  text-decoration: none;
+  color: #fff;
 }
 
 .works-image {
