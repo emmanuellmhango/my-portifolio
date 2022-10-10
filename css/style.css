@@ -216,7 +216,7 @@ h4 {
   align-items: flex-start;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  justify-content: baseline;
+  justify-content: center;
 }
 
 .works-image {
