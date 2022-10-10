@@ -645,7 +645,7 @@ h4 {
 @media (min-width: 768px) {
   .header-top,
   .choose-screen {
-    display: none;
+    display: none !important;
   }
 
   .wide-screen-none {
