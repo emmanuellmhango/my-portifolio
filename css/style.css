@@ -267,7 +267,7 @@ h4 {
   margin-bottom: 40px;
 }
 
-.menu-links-item a {
+.menu-links-item > a {
   text-decoration: none;
   color: #fff;
 }
