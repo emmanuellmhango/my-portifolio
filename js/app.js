@@ -18,7 +18,7 @@ window.onresize = () => {
       menuBlur.style.filter = 'blur(0)';
       menuLogo.style.filter = 'blur(0)';
     }
-  }
+  };
 };
 
 menuClose.addEventListener('click', () => {
