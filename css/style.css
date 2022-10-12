@@ -19,6 +19,28 @@ nav {
   height: 72px;
 }
 
+.menu-header {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin-left: 45px;
+  margin-top: 8px;
+  margin-right: 16px;
+}
+
+.menu-time {
+  margin-top: 5px;
+  flex-grow: 2;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: -0.28px;
+  color: #fff;
+}
+
 .menu-links-item > a {
   text-decoration: none;
   color: #fff;
@@ -103,7 +125,7 @@ li.links-transition:focus {
   justify-content: space-between;
   padding-top: 10px;
   align-items: center;
-  margin: 10px 36px 0 24px;
+  margin: 0 36px 0 24px;
 }
 
 .header .logo {
@@ -232,8 +254,8 @@ h4 {
 .menu-close {
   color: #fff;
   float: right;
-  font-size: 36px;
-  margin-top: 48px;
+  font-size: 34px;
+  margin-top: 10px;
   margin-right: 38px;
 }
 
@@ -250,13 +272,15 @@ h4 {
   margin: 0;
   background-color: rgba(96, 112, 255, 0.95);
   height: 100vh;
-  position: absolute;
+  position: fixed;
+  z-index: 18;
 }
 
 .menu-modal-content {
-  border-top: 106px;
   color: #fff;
-  margin: 90px 12px 0 12px;
+  margin: 95px 2px 0 2px;
+  overflow: hidden;
+  z-index: 15;
 }
 
 .menu-links {
@@ -264,12 +288,11 @@ h4 {
   font-style: normal;
   font-weight: 600;
   font-size: 32px;
-  line-height: 44px;
 }
 
 .menu-links-item {
   color: #fff;
-  margin-bottom: 40px;
+  margin-bottom: 20px;
 }
 
 .works-image {
@@ -648,6 +671,10 @@ h4 {
     display: none !important;
   }
 
+  .menu-modal {
+    display: none;
+  }
+
   .wide-screen-none {
     display: block;
   }
@@ -674,6 +701,7 @@ h4 {
     flex-direction: column;
     padding-bottom: 255px;
     margin: 25px 154px 0 154px;
+    z-index: 8;
   }
 
   .headline-last-part {

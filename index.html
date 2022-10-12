@@ -12,26 +12,41 @@
     <title>My Portifolio</title>
 </head>
 
-<body>
+<body id="mobile-menu-body">
     <!--Welcome Page Start-->
-    <section class="home-wrapper">
-        <div id="myMenuModal" class="menu-modal">
-            <span class="menu-close" id="closeBtn">&times;</span>
-            <div class="menu-modal-content">
-                <ul class="menu-links">
-                    <li class="menu-links-item"><a href="#portfolio" id="menu-links-item-portfolio">Portfolio</a></li>
-                    <li class="menu-links-item"><a href="#about" id="menu-links-item-about">About</a></li>
-                    <li class="menu-links-item"><a href="#contact" id="menu-links-item-contact">Contact</a></li>
-                </ul>
+    <div id="myMenuModal" class="menu-modal">
+        <div class="menu-header">
+            <div class="menu-time">9:41</div>
+            <div class="utilities">
+                <li class="fa fa-signal fa-lg"></li>
+                <li class="fa fa-wifi fa-lg"></li>
+                <i class="fa fa-battery-4 fa-lg"></i>
             </div>
         </div>
+        <span class="menu-close" id="closeBtn">&times;</span>
+        <div class="menu-modal-content">
+            <ul class="menu-links">
+                <li class="menu-links-item"><a href="#portfolio" id="menu-links-item-portfolio">Portfolio</a></li>
+                <li class="menu-links-item"><a href="#about" id="menu-links-item-about">About</a></li>
+                <li class="menu-links-item"><a href="#contact" id="menu-links-item-contact">Contact</a></li>
+            </ul>
+        </div>
+    </div>
 
-        <header class="header-wrapper">
-            <section class="header-top">
-                &nbsp;
+    <section class="home-wrapper">
+
+
+        <header class="header-wrapper" >
+            <section class="header-top" id="menu-header-top">
+                <div class="time">9:41</div>
+                <div class="utilities">
+                    <li class="fa fa-signal fa-lg"></li>
+                    <li class="fa fa-wifi fa-lg"></li>
+                    <i class="fa fa-battery-4 fa-lg"></i>
+                </div>
             </section>
             <section class="header">
-                <div class="logo"><a href="index.html">My Logo</a></div>
+                <div class="logo" id="menu-logo"><a href="index.html">My Logo</a></div>
                 <nav>
                     <ul class="links">
                         <li class="links-transition"><a href="#">Portifolio</a></li>
@@ -42,8 +57,8 @@
                 </nav>
             </section>
         </header>
-        <section class="headline headline-background">
-            <h1 class="introduction">I'm Emmanuel<br /> glad to see you</h1>
+        <section class="headline headline-background"  id="mobile-menu-blur">
+            <h1 class="introduction">I'm Emmanuel<br /> glad to see<br /> you</h1>
             <p class="description">I’m a software developer! I can help you build a product , feature or website Look
                 through some of my work and experience! If you like what you see and have a project you need coded,
                 don’t
