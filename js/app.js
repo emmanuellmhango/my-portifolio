@@ -9,17 +9,16 @@ const menuBlur = document.getElementById('mobile-menu-blur');
 const menuHeaderTop = document.getElementById('menu-header-top');
 const menuLogo = document.getElementById('menu-logo');
 
-window.onresize = () => {
-  window.onload = () => {
-    if (window.matchMedia('(min-width: 768px)').matches) {
-      menuModal.style.display = 'none';
-      menu.style.display = 'block';
-      menuBody.style.overflowY = 'visible';
-      menuBlur.style.filter = 'blur(0)';
-      menuLogo.style.filter = 'blur(0)';
-    }
-  };
-};
+
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(min-width: 768px)').matches) { 
+    menuModal.style.display = 'none';
+    menu.style.display = 'block';
+    menuBody.style.overflowY = 'visible';
+    menuBlur.style.filter = 'blur(0)';
+    menuLogo.style.filter = 'blur(0)';
+  } 
+});
 
 menuClose.addEventListener('click', () => {
   menuModal.style.display = 'none';
