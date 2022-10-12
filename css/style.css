@@ -19,6 +19,33 @@ nav {
   height: 72px;
 }
 
+.menu-header {
+  display: flex;
+  color: #fff;
+  justify-content: space-between;
+  margin-left: 45px;
+  margin-top: 8px;
+  margin-right: 16px;
+}
+
+.menu-time {
+  margin-top: 5px;
+  flex-grow: 2;
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 16px;
+  text-align: left;
+  letter-spacing: -0.28px;
+  color: #fff;
+}
+
+.menu-links-item > a {
+  text-decoration: none;
+  color: #fff;
+}
+
 .home-wrapper {
   background-color: #fff;
   border-bottom-left-radius: 100px;
@@ -98,7 +125,7 @@ li.links-transition:focus {
   justify-content: space-between;
   padding-top: 10px;
   align-items: center;
-  margin: 10px 36px 0 24px;
+  margin: 0 36px 0 24px;
 }
 
 .header .logo {
@@ -129,6 +156,11 @@ li.links-transition:focus {
   flex-direction: column;
   margin-top: 114px;
   padding-bottom: 136px;
+}
+
+.choose-screen:hover {
+  cursor: pointer;
+  display: block;
 }
 
 .headline-last-part {
@@ -216,7 +248,51 @@ h4 {
   align-items: flex-start;
   border: 1px solid #dfe1e6;
   border-radius: 16px;
-  justify-content: baseline;
+  justify-content: center;
+}
+
+.menu-close {
+  color: #fff;
+  float: right;
+  font-size: 34px;
+  margin-top: 10px;
+  margin-right: 38px;
+}
+
+.menu-close:hover,
+.menu-close:focus {
+  color: #fff;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.menu-modal {
+  display: none;
+  width: 100%;
+  margin: 0;
+  background-color: rgba(96, 112, 255, 0.95);
+  height: 100vh;
+  position: fixed;
+  z-index: 18;
+}
+
+.menu-modal-content {
+  color: #fff;
+  margin: 95px 2px 0 2px;
+  overflow: hidden;
+  z-index: 15;
+}
+
+.menu-links {
+  list-style: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 32px;
+}
+
+.menu-links-item {
+  color: #fff;
+  margin-bottom: 20px;
 }
 
 .works-image {
@@ -592,6 +668,10 @@ h4 {
 @media (min-width: 768px) {
   .header-top,
   .choose-screen {
+    display: none !important;
+  }
+
+  .menu-modal {
     display: none;
   }
 
@@ -621,6 +701,7 @@ h4 {
     flex-direction: column;
     padding-bottom: 255px;
     margin: 25px 154px 0 154px;
+    z-index: 8;
   }
 
   .headline-last-part {
