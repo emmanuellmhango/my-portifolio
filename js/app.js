@@ -10,7 +10,7 @@ const menuHeaderTop = document.getElementById('menu-header-top');
 const menuLogo = document.getElementById('menu-logo');
 
 window.onresize = window.onload = function() {
-  if(window.matchMedia('(min-width: 768px)').matches) {
+  if (window.matchMedia('(min-width: 768px)').matches) {
     menuModal.style.display = 'none';
     menu.style.display = 'block';
     menuBody.style.overflowY = 'visible';
