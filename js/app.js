@@ -11,11 +11,11 @@ const menuLogo = document.getElementById('menu-logo');
 
 window.addEventListener('resize', () => {
 if (window.matchMedia('(min-width: 768px)').matches) {
-  menuModal.style.display = 'none';
-  menu.style.display = 'block';
-  menuBody.style.overflowY = 'visible';
-  menuBlur.style.filter = 'blur(0)';
-  menuLogo.style.filter = 'blur(0)';
+    menuModal.style.display = 'none';
+    menu.style.display = 'block';
+    menuBody.style.overflowY = 'visible';
+    menuBlur.style.filter = 'blur(0)';
+    menuLogo.style.filter = 'blur(0)';
   }
 });
 
