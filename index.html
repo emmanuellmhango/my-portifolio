@@ -286,21 +286,18 @@
         <section class="contact-me" id="contact">
             <section class="wrapper">
                 <h1 class="primary-text">Contact me</h1>
-                <p class="secondary-text">If you have an application you are interested in developing, a feature that
-                    you
-                    need built or a project that needs coding. I’d love to help with it </p>
-                <form action="https://formspree.io/f/xqkjqoer" method="post" class="contact-form">
+                <div class="error-output" id="error-output"></div>
+                <p class="secondary-text">If you have an application you are interested in developing, a feature that you need built or a project that needs coding. I’d love to help with it </p>
+                <form action="https://formspree.io/f/xqkjqoer" method="post" class="contact-form" id="contact_form">
                     <label for="name" hidden>Name</label>
-                    <input type="text" placeholder=" Your Name" class="input-type small-screen-view" name="name"
-                        maxlength="30" required />
-                    <input type="text" placeholder=" Your Full Name" class="input-type wide-screen-input" name="name"
-                        maxlength="30" required />
+                    <input type="text" placeholder=" Your Name" class="input-type" name="name"
+                        maxlength="30" id="name" required />
                     <label for="email" hidden>Email</label>
-                    <input type="email" placeholder="Your email" class="input-type" name="email" required />
+                    <input type="email" placeholder="Your email" id="email" class="input-type" name="email" required />
                     <label for="message" hidden>Message</label>
-                    <textarea cols="30" placeholder="Please write your message" rows="10" class="input-type-textarea"
+                    <textarea cols="30" placeholder="Please write your message" id="message" rows="10" class="input-type-textarea"
                         name="message" maxlength="500" required></textarea>
-                    <input type="submit" value="Get in Touch" class="get-in-touch" />
+                    <input type="submit" value="Get in Touch" class="get-in-touch" id="button-submit"/>
                 </form>
             </section>
         </section>
@@ -308,5 +305,4 @@
     </section>
     <script src="js/app.js"></script>
 </body>
-
 </html>

@@ -223,7 +223,7 @@ h4 {
 }
 
 .modal-div {
-margin: auto;
+  margin: auto;
 }
 
 .social li {
@@ -296,8 +296,7 @@ margin: auto;
   position: fixed;
   z-index: 18;
 }
-/****************************************/
-/* Modal Content */
+
 .tonic-project-modal-content {
   width: 100%;
   margin: 0;
@@ -446,7 +445,7 @@ margin: auto;
   cursor: pointer;
   font-weight: bold;
 }
-/***************************************/
+
 .menu-modal-content {
   color: #fff;
   margin: 95px 2px 0 2px;
