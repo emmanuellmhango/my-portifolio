@@ -45,7 +45,7 @@ const projectData = {
     title: 'CANOPY',
     category: 'Back End Dev',
     languages: ['html', 'css', 'ruby on rails'],
-    images:['tonic-2-project.jpg','Snapshoot-Portfolio-3.png'],
+    images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
   },
 };
 
@@ -102,8 +102,8 @@ function modalPopup(data) {
 }
 
 tonicProject.addEventListener('click', () => {
-  let data = [
-    projectData.tonicProjectdata.name, 
+  const data = [
+    projectData.tonicProjectdata.name,
     projectData.tonicProjectdata.title,
     projectData.tonicProjectdata.category,
     projectData.tonicProjectdata.description,
