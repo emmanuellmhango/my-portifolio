@@ -28,6 +28,15 @@ nav {
   margin-right: 16px;
 }
 
+.error-output {
+  background-color: red;
+  color: white;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
 .menu-time {
   margin-top: 5px;
   flex-grow: 2;
