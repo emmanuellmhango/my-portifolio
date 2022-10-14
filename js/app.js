@@ -115,7 +115,7 @@ tonicProject.addEventListener('click', () => {
 
 tonicProject2.addEventListener('click', () => {
   const data = [
-    projectData.tonicProject2data.name, 
+    projectData.tonicProject2data.name,
     projectData.tonicProject2data.title,
     projectData.tonicProject2data.category,
     projectData.tonicProject2data.description,
