@@ -56,7 +56,7 @@ const projectData = {
     category: 'Back End Dev',
     languages: ['html', 'css', 'ruby on rails'],
     images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
-  }
+  },
 };
 
 function modalPopup(data) {
