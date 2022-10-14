@@ -125,8 +125,9 @@ tonicProject.addEventListener('click', () => {
     projectData.tonicProjectdata.category,
     projectData.tonicProjectdata.description,
     projectData.tonicProjectdata.languages,
-    projectData.tonicProjectdata.images,
+    projectData.tonicProjectdata.images
   ];
+  console.log(data);
   modalPopup(data);
 });
 
