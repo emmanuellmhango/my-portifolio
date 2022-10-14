@@ -139,7 +139,7 @@ multipostProject.addEventListener('click', () => {
 
 multipostProject2.addEventListener('click', () => {
   const data = [
-    projectData.multipostProject2Data.name, 
+    projectData.multipostProject2Data.name,
     projectData.multipostProject2Data.title,
     projectData.multipostProject2Data.category,
     projectData.multipostProject2Data.description,
