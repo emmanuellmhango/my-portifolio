@@ -186,20 +186,4 @@ menuItemAbout.addEventListener('click', () => {
   menuHeaderTop.style.display = 'flex';
 });
 
-menuItemContact.addEventListener('click', () => {
-  menuModal.style.display = 'none';
-  menu.style.display = 'block';
-  menuBody.style.overflowY = 'visible';
-  menuBlur.style.filter = 'blur(0)';
-  menuLogo.style.filter = 'blur(0)';
-  menuHeaderTop.style.display = 'flex';
-});
 
-menuItemPortfolio.addEventListener('click', () => {
-  menuModal.style.display = 'none';
-  menu.style.display = 'block';
-  menuBody.style.overflowY = 'visible';
-  menuBlur.style.filter = 'blur(0)';
-  menuLogo.style.filter = 'blur(0)';
-  menuHeaderTop.style.display = 'flex';
-});
