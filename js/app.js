@@ -21,7 +21,7 @@ const projectData = {
     title: 'CANOPY',
     category: 'Back End Dev',
     languages: ['html', 'css', 'javascript'],
-    images: ['tonic-project.png', 'Snapshoot Portfolio.png'],  
+    images: ['tonic-project.png', 'Snapshoot Portfolio.png']
   },
   tonicProject2data: {
     name: 'Tonic', 
