@@ -13,7 +13,6 @@ const tonicProject = document.getElementById('tonic-project-btn');
 const multipostProject = document.getElementById('multipost-project-btn');
 const tonicProject2 = document.getElementById('tonic-project-2-btn');
 const multipostProject2 = document.getElementById('multipost-project-2-btn');
-//const formButtonSubmit = document.getElementById('button-submit');
 const errorDiv = document.getElementById('error-output');
 const form = document.getElementById('contact_form');
 
