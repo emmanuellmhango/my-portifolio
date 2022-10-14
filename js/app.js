@@ -108,43 +108,43 @@ tonicProject.addEventListener('click', () => {
     projectData.tonicProjectdata.category,
     projectData.tonicProjectdata.description,
     projectData.tonicProjectdata.languages,
-    projectData.tonicProjectdata.images
+    projectData.tonicProjectdata.images,
   ];
   modalPopup(data);
 });
 
 tonicProject2.addEventListener('click', () => {
-  let data = [
+  const data = [
     projectData.tonicProject2data.name, 
     projectData.tonicProject2data.title,
     projectData.tonicProject2data.category,
     projectData.tonicProject2data.description,
     projectData.tonicProject2data.languages,
-    projectData.tonicProject2data.images
+    projectData.tonicProject2data.images,
   ];
   modalPopup(data);
 });
 
 multipostProject.addEventListener('click', () => {
-  let data = [
-    projectData.multipostProjectData.name, 
+  const data = [
+    projectData.multipostProjectData.name,
     projectData.multipostProjectData.title,
     projectData.multipostProjectData.category,
     projectData.multipostProjectData.description,
     projectData.multipostProjectData.languages,
-    projectData.multipostProjectData.images
+    projectData.multipostProjectData.images,
   ];
   modalPopup(data);
 });
 
 multipostProject2.addEventListener('click', () => {
-  let data = [
+  const data = [
     projectData.multipostProject2Data.name, 
     projectData.multipostProject2Data.title,
     projectData.multipostProject2Data.category,
     projectData.multipostProject2Data.description,
     projectData.multipostProject2Data.languages,
-    projectData.multipostProject2Data.images
+    projectData.multipostProject2Data.images,
   ];
   modalPopup(data);
 });
