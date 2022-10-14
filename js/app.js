@@ -109,13 +109,6 @@ function modalPopup(data) {
     </div>
   </div>
   `;
-  if (data[4].length > 3) {
-    const ul = document.getElementById('language-list');
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(data[4][3]));
-    li.setAttribute('class', 'coding-languages small-screen-view-languages');
-    ul.appendChild(li);
-  }
 }
 
 tonicProject.addEventListener('click', () => {
