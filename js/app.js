@@ -27,42 +27,42 @@ form.addEventListener('submit', (e) => {
 const projectData = {
   tonicProjectdata: {
     name: 'Tonic',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
+    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
     title: 'CANOPY',
     category: 'Back End Dev',
-    languages: ['html', 'css', 'javascript'],
-    images: ['tonic-project.png', 'Snapshoot Portfolio.png'],
+    languages: ['html','css','javascript'],
+    images:['tonic-project.png','Snapshoot Portfolio.png']
   },
   tonicProject2data: {
     name: 'Tonic',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
+    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
     title: 'FACEBOOK',
     category: 'Back End Dev',
-    languages: ['html', 'css', 'javascript'],
-    images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
+    languages: ['html','css','javascript'],
+    images:['tonic-2-project.jpg','Snapshoot-Portfolio-3.png']
   },
   multipostProjectData: {
     name: 'Multi-Post Stories',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
+    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
     title: 'FACEBOOK',
     category: 'Full stack',
-    languages: ['html', 'css', 'javascript'],
-    images: ['multi-post-stories-project.jpg', 'Snapshoot-Portfolio-2.png'],
+    languages: ['html','css','javascript'],
+    images:['multi-post-stories-project.jpg','Snapshoot-Portfolio-2.png']
   },
   multipostProject2Data: {
     name: 'Multi-Post Stories',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
+    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent','Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
     title: 'CANOPY',
     category: 'Back End Dev',
-    languages: ['html', 'css', 'ruby on rails'],
-    images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
-  },
+    languages: ['html','css', 'ruby on rails'],
+    images:['tonic-2-project.jpg','Snapshoot-Portfolio-3.png']
+  }
 };
 
 function modalPopup(data) {
   menuBody.style.overflow = 'hidden';
   tonicProjectModal.style.display = 'block';
-  tonicProjectModal.innerHTML += `
+  tonicProjectModal.innerHTML +=`
     <div class='tonic-project-modal-content' id='tonic-project-modal'>
     <div class='tonic-project-content'>
         <div class='tonic-project-modal-header'>
@@ -109,7 +109,7 @@ function modalPopup(data) {
     </div>
   </div>
   `;
-  if (data[4].length > 3) {
+  if(data[4].length > 3){
     const ul = document.getElementById('language-list');
     const li = document.createElement('li');
     li.appendChild(document.createTextNode(data[4][3]));
@@ -119,51 +119,50 @@ function modalPopup(data) {
 }
 
 tonicProject.addEventListener('click', () => {
-  const data = [
-    projectData.tonicProjectdata.name,
+  let data = [
+    projectData.tonicProjectdata.name, 
     projectData.tonicProjectdata.title,
     projectData.tonicProjectdata.category,
     projectData.tonicProjectdata.description,
     projectData.tonicProjectdata.languages,
     projectData.tonicProjectdata.images
-  ];
-  console.log(data);
+  ]
   modalPopup(data);
 });
 
 tonicProject2.addEventListener('click', () => {
-  const data = [
-    projectData.tonicProject2data.name,
+  let data = [
+    projectData.tonicProject2data.name, 
     projectData.tonicProject2data.title,
     projectData.tonicProject2data.category,
     projectData.tonicProject2data.description,
     projectData.tonicProject2data.languages,
-    projectData.tonicProject2data.images,
-  ];
+    projectData.tonicProject2data.images
+  ]
   modalPopup(data);
 });
 
 multipostProject.addEventListener('click', () => {
-  const data = [
-    projectData.multipostProjectData.name,
+  let data = [
+    projectData.multipostProjectData.name, 
     projectData.multipostProjectData.title,
     projectData.multipostProjectData.category,
     projectData.multipostProjectData.description,
     projectData.multipostProjectData.languages,
-    projectData.multipostProjectData.images,
-  ];
+    projectData.multipostProjectData.images
+  ]
   modalPopup(data);
 });
 
 multipostProject2.addEventListener('click', () => {
-  const data = [
-    projectData.multipostProject2Data.name,
+  let data = [
+    projectData.multipostProject2Data.name, 
     projectData.multipostProject2Data.title,
     projectData.multipostProject2Data.category,
     projectData.multipostProject2Data.description,
     projectData.multipostProject2Data.languages,
-    projectData.multipostProject2Data.images,
-  ];
+    projectData.multipostProject2Data.images
+  ]
   modalPopup(data);
 });
 

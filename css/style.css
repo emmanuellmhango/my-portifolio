@@ -223,7 +223,7 @@ h4 {
 }
 
 .modal-div {
-  margin: auto;
+margin: auto;
 }
 
 .social li {
@@ -296,7 +296,8 @@ h4 {
   position: fixed;
   z-index: 18;
 }
-
+/****************************************/
+/* Modal Content */
 .tonic-project-modal-content {
   width: 100%;
   margin: 0;
@@ -353,7 +354,7 @@ h4 {
 .tonic-see-live {
   width: 130px;
   height: 43px;
-  left: calc(50% - 150px / 2);
+  left: calc(50% - 150px/2);
   margin-right: 10px;
   background: #fff;
   border: 1px solid #6070ff;
@@ -390,6 +391,7 @@ h4 {
   grid-template-rows: auto;
   width: 100%;
   margin-top: 20px;
+  height: fit-content;
   justify-items: center;
 }
 
@@ -418,7 +420,7 @@ h4 {
 }
 
 .tonic-project-modal-header-techs {
-  display: block;
+  display: block; 
   align-self: flex-start;
 }
 
@@ -444,7 +446,7 @@ h4 {
   cursor: pointer;
   font-weight: bold;
 }
-
+/***************************************/
 .menu-modal-content {
   color: #fff;
   margin: 95px 2px 0 2px;
