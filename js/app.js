@@ -123,7 +123,7 @@ function modalPopup(data) {
                     </ul>
                 </section>
                 <div class='tonic-project-modal-footer'>
-                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.JPG' alt='See source on Github' srcset=''></button>
+                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.png' alt='See source on Github' srcset=''></button>
                     <button class='tonic-see-live'><span class='tonic-see-live-text'>See Source</span> <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github' srcset=''></button>
                 </div>
             </div>
