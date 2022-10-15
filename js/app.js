@@ -15,6 +15,7 @@ const tonicProject2 = document.getElementById('tonic-project-2-btn');
 const multipostProject2 = document.getElementById('multipost-project-2-btn');
 const errorDiv = document.getElementById('error-output');
 const form = document.getElementById('contact_form');
+
 const portfolio = document.getElementById('portfolio');
 
 function myWork1() {
@@ -102,7 +103,6 @@ function myWork1() {
 
 myWork1();
 
-
 form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
   if (email !== email.toLowerCase()) {
@@ -110,6 +110,27 @@ form.addEventListener('submit', (e) => {
     e.preventDefault();
   }
 });
+
+form.addEventListener('keyup', () => {
+  const data = {
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
+  };
+  localStorage.setItem('data', JSON.stringify(data));
+});
+
+function getData() {
+  const data = JSON.parse(localStorage.getItem('data'));
+
+  if (data) {
+    document.getElementById('name').value = data.name;
+    document.getElementById('email').value = data.email;
+    document.getElementById('message').value = data.message;
+  }
+}
+
+getData();
 
 const projectData = {
   tonicProjectdata: {
@@ -196,13 +217,6 @@ function modalPopup(data) {
     </div>
   </div>
   `;
-  if (data[4].length > 3) {
-    const ul = document.getElementById('language-list');
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(data[4][3]));
-    li.setAttribute('class', 'coding-languages small-screen-view-languages');
-    ul.appendChild(li);
-  }
 }
 
 tonicProject.addEventListener('click', () => {
