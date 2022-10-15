@@ -19,6 +19,22 @@ nav {
   height: 72px;
 }
 
+.tonic-see-live {
+  width: 150px;
+  height: 43px;
+  left: calc(50% - 150px / 2);
+  margin-right: 10px;
+  background: #fff;
+  border: 1px solid #6070ff;
+  border-radius: 8px;
+  padding-bottom: 5px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  color: #6070ff;
+}
+
 .menu-header {
   display: flex;
   color: #fff;
@@ -322,7 +338,6 @@ h4 {
   overflow: auto;
 }
 
-
 .tonic-project-modal-footer {
   margin-top: 15px;
 }
@@ -361,23 +376,7 @@ h4 {
   display: flex;
 }
 
-.tonic-see-live {
-  width: 150px;
-  height: 43px;
-  left: calc(50% - 150px / 2);
-  margin-right: 10px;
-  background: #fff;
-  border: 1px solid #6070ff;
-  border-radius: 8px;
-  padding-bottom: 5px;
-  font-family: 'Poppins', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  color: #6070ff;
-}
-
-@media (min-width: 768px) and (max-width: 959px){
+@media (min-width: 768px) and (max-width: 959px) {
   .wide-screen-view-modal {
     display: block;
     object-fit: cover;
@@ -397,7 +396,7 @@ h4 {
   }
 }
 
-@media (min-width: 959px){
+@media (min-width: 959px) {
   .wide-screen-view-modal {
     display: block;
     height: 450px;
@@ -1216,4 +1215,3 @@ h4 {
     width: 447px;
   }
 }
-/*form validation*/
