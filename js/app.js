@@ -15,7 +15,6 @@ const tonicProject = document.getElementById('tonic-project-btn');
 const multipostProject2 = document.getElementById('multipost-project-2-btn');
 const errorDiv = document.getElementById('error-output');
 const form = document.getElementById('contact_form');
-const portfolio = document.getElementById('portfolio');
 
 form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
