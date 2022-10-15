@@ -66,9 +66,9 @@ function modalPopup(data) {
     <div class='tonic-project-modal-content' id='tonic-project-modal'>
     <div class='tonic-project-content'>
         <div class='tonic-project-modal-header'>
-            <h2 class='tonic-h2-modal'>${data[0]}</h2>
-            <div class='tonic-project-close' onClick="document.getElementById('modal-div').style.display = 'none';
-            document.getElementById('mobile-menu-body').style.overflow ='visible';">&times;</div>
+            <h2 class='tonic-h2'>${data[0]}</h2>
+            <span class='tonic-project-close' onClick="document.getElementById('modal-div').style.display = 'none';
+            document.getElementById('mobile-menu-body').style.overflow ='visible';">&times;</span>
         </div>      
         <ul class='works-headers tonic-project-modal-header-techs'>
             <li class='title-header' style='margin-right: 50px;'>${data[1]}</li>
@@ -80,7 +80,7 @@ function modalPopup(data) {
         <div class='tonic-project-modal-body'>
             <figure class='img-wide-screen-modal'>
                 <img src='images/${data[5][0]}' class='works-image style-image small-screen-view' alt='Tonic App Screenshot'>
-                <img src='images/${data[5][1]}' class='wide-screen-view-modal modal-pic-full' alt='Tonic project image Screenshot'>
+                <img src='images/${data[5][1]}' class='wide-screen-view modal-pic-full' alt='Tonic project image Screenshot'>
             </figure>
         </div>
         <section class='project-aside'>
@@ -101,21 +101,14 @@ function modalPopup(data) {
                     </ul>
                 </section>
                 <div class='tonic-project-modal-footer'>
-                    <button class='tonic-see-live'>See live <img class='tonic-see-live-img' src='./images/live.png' alt='See Live Project'></button>
-                    <button class='tonic-see-live'>See Source <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github'></button>
+                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.JPG' alt='See source on Github' srcset=''></button>
+                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See Source</span> <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github' srcset=''></button>
                 </div>
             </div>
         </section>
     </div>
   </div>
   `;
-  if (data[4].length > 3) {
-    const ul = document.getElementById('language-list');
-    const li = document.createElement('li');
-    li.appendChild(document.createTextNode(data[4][3]));
-    li.setAttribute('class', 'coding-languages small-screen-view-languages');
-    ul.appendChild(li);
-  }
 }
 
 tonicProject.addEventListener('click', () => {
