@@ -108,13 +108,22 @@ li.links-transition {
   transition: all 0.5s ease-out;
 }
 
-li.links-transition:hover,
-li.links-transition:focus {
+li.links-transition:hover {
   padding: 5%;
   height: 48px;
   background-color: #ebebff;
   border-radius: 8px;
   border: 1px solid #6070ff;
+  animation: shake;
+  animation-duration: 1s;
+}
+
+li.links-transition:focus {
+  padding: 5%;
+  height: 48px;
+  background-color: #ebebff;
+  border-radius: 8px;
+  border: 1px solid #2230d2;
   animation: shake;
   animation-duration: 1s;
 }
@@ -127,6 +136,10 @@ li.links-transition:focus {
   to {
     transition: all 500ms ease-in-out;
   }
+}
+
+.wide-screen-views {
+  display: none;
 }
 
 .header-wrapper {
@@ -330,7 +343,6 @@ h4 {
   display: none;
 }
 
-.tonic-see-live:hover,
 .tonic-see-live:focus {
   color: #fff;
   background-color: #2230d2;
@@ -339,6 +351,29 @@ h4 {
   font-style: normal;
   font-weight: 500;
   font-size: 17px;
+}
+
+.tonic-see-live:hover {
+  color: #fff;
+  background-color: #6070ff;
+  border-radius: 8px;
+  font-family: 'Poppins', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+}
+
+.my-worksRev {
+  margin-top: 114px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background-color: #fff;
+  padding: 16px 16px 28px 16px;
+  align-items: flex-start;
+  border: 1px solid #dfe1e6;
+  border-radius: 16px;
+  justify-content: center;
 }
 
 .menu-modal {
@@ -587,8 +622,7 @@ h4 {
   display: flex;
   padding: 0;
   justify-content: space-between;
-  margin-top: 0;
-  margin-left: 16px;
+  margin-top: 20px;
   align-items: center;
 }
 
@@ -632,6 +666,7 @@ h4 {
   line-height: 24px;
   color: #344563;
   flex-grow: 0;
+  margin-top: 24px;
 }
 
 .project-languages {
@@ -1078,6 +1113,10 @@ h4 {
     height: 46px;
     width: 496px;
     color: #091e42;
+  }
+
+  .wide-screen-views {
+    display: block;
   }
 
   .wide-screen-view {

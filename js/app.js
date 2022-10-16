@@ -14,7 +14,8 @@ const form = document.getElementById('contact_form');
 const myPortfolioData = [
   {
     id: 1,
-    name: 'Tonic',
+    name1: 'Tonic',
+    name2: 'Tonic',
     title: 'CANOPY',
     technology: 'Back End Dev',
     description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
@@ -27,7 +28,8 @@ const myPortfolioData = [
   },
   {
     id: 2,
-    name: 'Multi-Post Stories',
+    name1: 'Multi-Post Stories',
+    name2: 'Multi-Post Stories',
     title: 'FACEBOOK',
     technology: 'Fullstack Dev',
     description1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends',
@@ -40,7 +42,8 @@ const myPortfolioData = [
   },
   {
     id: 3,
-    name: 'Tonic',
+    name1: 'Tonic',
+    name2: 'Facebook 360',
     title: 'FACEBOOK',
     technology: 'Back End Dev',
     description1: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
@@ -53,7 +56,8 @@ const myPortfolioData = [
   },
   {
     id: 4,
-    name: 'Multi-Post Stories',
+    name1: 'Multi-Post Stories',
+    name2: 'Uber Navigation',
     title: 'CANOPY',
     technology: 'Back End Dev',
     description1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
@@ -77,8 +81,8 @@ myPortfolioData.forEach((data) => {
       </figure>
       <div class="wider-screen-project-definition">
           <div class="works-description">
-              <h3 class="my-works-project-title small-screen-view-none">${data.name}</h3>
-              <h3 class="my-works-project-title wide-screen-view-title">${data.name}</h3>
+              <h3 class="my-works-project-title small-screen-view-none">${data.name1}</h3>
+              <h3 class="my-works-project-title wide-screen-view-title">${data.name2}</h3>
               <ul class="works-headers">
                   <li class="title-header">${data.title}</li>
                   <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
@@ -123,7 +127,8 @@ modalProject.forEach((proj) => {
     
     <div class='tonic-project-content'>
         <div class='tonic-project-modal-header'>
-            <h2 class='tonic-h2-modal'>${card[0].name}</h2>
+            <h2 class='tonic-h2-modal small-screen-view'>${card[0].name1}</h2>
+            <h2 class='tonic-h2-modal wide-screen-views'>${card[0].name2}</h2>
             <span class='tonic-project-close' onclick="popUp.classList.toggle('hide')">&times;</span>
         </div>      
         <ul class='works-headers tonic-project-modal-header-techs'>
