@@ -19,6 +19,29 @@ nav {
   height: 72px;
 }
 
+.hide {
+  display: none;
+} 
+
+.popUp {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+
+.popUp-content {
+  background-color: #fff;
+  width: 90%;
+  margin: 16px auto 0 auto;
+  border-radius: 16px;
+}
+
 .tonic-see-live {
   width: 150px;
   height: 43px;
@@ -362,18 +385,19 @@ h4 {
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 16px;
-  width: 60vw;
+  padding: 10px;
+  width: 100%;
   position: relative;
   margin: 40px auto;
   background: #fff;
-  border: 1px solid #dfe1e6;
   border-radius: 16px;
 }
 
 .tonic-project-modal-header {
   margin: 0;
   display: flex;
+  justify-content: space-between;
+  width: 100%;
 }
 
 @media (min-width: 768px) and (max-width: 959px) {
@@ -403,6 +427,10 @@ h4 {
     object-fit: cover;
     align-items: center;
     border-radius: 8px;
+    width: calc(100% - 48px);
+    border-radius: 8px;
+    margin-left: 50%;
+    margin-right: 50%;
   }
 
   .modal-pic-full {
@@ -411,8 +439,11 @@ h4 {
 
   .img-wide-screen-modal {
     margin: 0;
-    height: 40%;
-    width: 100%;
+    height: 586px;
+    width: calc(100% - 48px);
+    border-radius: 8px;
+    margin-left: 50%;
+    margin-right: 50%;
   }
 }
 
@@ -519,7 +550,7 @@ h4 {
 }
 
 .works-image {
-  border-radius: 8px;
+  border-radius: 5px;
   align-self: center;
 }
 
@@ -531,6 +562,10 @@ h4 {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+}
+
+.desktop {
+  display: none;
 }
 
 .my-works-project-title {
@@ -555,6 +590,7 @@ h4 {
   justify-content: space-between;
   margin-top: 0;
   margin-left: 16px;
+  align-items: center;
 }
 
 .title-header {
@@ -962,6 +998,15 @@ h4 {
     order: 1;
   }
 
+  .deskFlex {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .my-work-languages-tonic {
+    margin-bottom: 10px;
+  }
+
   .my-works {
     display: flex;
     flex-direction: row;
@@ -969,11 +1014,24 @@ h4 {
     background-color: #fff;
     border: 1px solid #dfe1e6;
     border-radius: 16px;
-    height: 496px;
-    width: 65%;
     margin-top: 142px;
     margin-left: auto;
     margin-right: auto;
+    padding-right: 20px;
+    width: 80%;
+  }
+
+  .my-worksRev {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: flex-start;
+    background-color: #fff;
+    border: 1px solid #dfe1e6;
+    border-radius: 16px;
+    margin-top: 142px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 20px;
   }
 
   .my-skills {
@@ -1060,6 +1118,21 @@ h4 {
     margin-top: 20px;
   }
 
+ .hide {
+    display: none;
+  } 
+
+  .popUp {
+    max-height: 100%;
+    overflow-y: auto;
+    z-index: 1000;
+  }
+
+  .popUp-content {
+    width: 80%;
+    margin: 50px auto 50px auto;
+  }
+
   .project-description {
     width: 496px;
     height: 50px;
@@ -1101,6 +1174,10 @@ h4 {
     margin-left: 10px;
   }
 
+  .desktop {
+    display: block;
+  }
+
   .wide-screen-about-me {
     margin-top: 142px;
     width: 100%;
@@ -1128,10 +1205,9 @@ h4 {
 
   .tonic-project-modal-header {
     margin: 0;
-    display: grid;
-    grid-template-columns: 90% 10%;
-    grid-template-rows: auto auto;
-    width: 98%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
   }
 
   .introduction {
