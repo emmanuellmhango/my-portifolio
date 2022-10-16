@@ -21,7 +21,7 @@ nav {
 
 .hide {
   display: none;
-} 
+}
 
 .popUp {
   width: 100%;
@@ -428,7 +428,6 @@ h4 {
     align-items: center;
     border-radius: 8px;
     width: calc(100% - 48px);
-    border-radius: 8px;
     margin-left: 50%;
     margin-right: 50%;
   }
