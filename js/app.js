@@ -8,13 +8,176 @@ const menuBody = document.getElementById('mobile-menu-body');
 const menuBlur = document.getElementById('mobile-menu-blur');
 const menuHeaderTop = document.getElementById('menu-header-top');
 const menuLogo = document.getElementById('menu-logo');
-const tonicProjectModal = document.getElementById('modal-div');
-const tonicProject = document.getElementById('tonic-project-btn');
-const multipostProject = document.getElementById('multipost-project-btn');
-const tonicProject2 = document.getElementById('tonic-project-2-btn');
-const multipostProject2 = document.getElementById('multipost-project-2-btn');
 const errorDiv = document.getElementById('error-output');
 const form = document.getElementById('contact_form');
+
+const myPortfolioData = [
+  {
+    id: 1,
+    name1: 'Tonic',
+    name2: 'Tonic',
+    title: 'CANOPY',
+    technology: 'Back End Dev',
+    description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img1: 'images/tonic-project.png',
+    img2: 'images/Snapshoot Portfolio.png',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    class1: 'my-works',
+  },
+  {
+    id: 2,
+    name1: 'Multi-Post Stories',
+    name2: 'Multi-Post Stories',
+    title: 'FACEBOOK',
+    technology: 'Fullstack Dev',
+    description1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends',
+    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img1: 'images/multi-post-stories-project.jpg',
+    img2: 'images/Snapshoot-Portfolio-3.png',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    class1: 'my-worksRev',
+  },
+  {
+    id: 3,
+    name1: 'Tonic',
+    name2: 'Facebook 360',
+    title: 'FACEBOOK',
+    technology: 'Back End Dev',
+    description1: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
+    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img1: 'images/tonic-2-project.jpg',
+    img2: 'images/Snapshoot-Portfolio-2.png',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    class1: 'my-works',
+  },
+  {
+    id: 4,
+    name1: 'Multi-Post Stories',
+    name2: 'Uber Navigation',
+    title: 'CANOPY',
+    technology: 'Back End Dev',
+    description1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
+    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
+    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
+    img1: 'images/multi-post-stories-2-project.jpg',
+    img2: 'images/Snapshoot-Portfolio-4.png',
+    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    class1: 'my-worksRev',
+  },
+];
+
+const portfolioProjects = document.getElementById('portfolio');
+
+myPortfolioData.forEach((data) => {
+  portfolioProjects.innerHTML += `
+   <div class="${data.class1}">
+      <figure class="img-wide-screen">
+          <img src="${data.img1}" class="works-image small-screen-view " alt="Tonic App Screenshot" width="100%">
+          <img src="${data.img2}" alt="Tonic project image Screenshot" class="wide-screen-view">
+      </figure>
+      <div class="wider-screen-project-definition">
+          <div class="works-description">
+              <h3 class="my-works-project-title small-screen-view-none">${data.name1}</h3>
+              <h3 class="my-works-project-title wide-screen-view-title">${data.name2}</h3>
+              <ul class="works-headers">
+                  <li class="title-header">${data.title}</li>
+                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                  <li class="title-header-general">${data.technology}</li>
+                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                  <li class="title-header-general">2015</li>
+              </ul>
+              <p class="project-description">
+                ${data.description1}
+              </p>
+          </div>
+          <section class="project-languages">
+              <ul class="my-work-languages">
+                  <li class="coding-languages">${data.technologies[0]}</li>
+                  <li class="coding-languages">${data.technologies[1]}</li>
+                  <li class="coding-languages">${data.technologies[2]}</li>
+              </ul>
+          </section>
+          <section class="project-more">
+              <button class="works-see-more" type="button" name="${data.id}">See Project</button>
+          </section>
+      </div>
+    </div>
+  `;
+});
+
+portfolioProjects.innerHTML += '<div id="popUp" class="popUp hide"></div>';
+const modalProject = document.querySelectorAll('.works-see-more');
+const popUpModalDiv = document.getElementById('popUp');
+modalProject.forEach((proj) => {
+  proj.addEventListener('click', () => {
+    const name = parseInt(proj.getAttribute('name'), 10);
+    const card = myPortfolioData.filter((item) => {
+      if (item.id === name) {
+        return item;
+      }
+      return false;
+    });
+
+    popUpModalDiv.innerHTML = `
+    <div class="popUp-content">
+    
+    <div class='tonic-project-content'>
+        <div class='tonic-project-modal-header'>
+            <h2 class='tonic-h2-modal small-screen-view'>${card[0].name1}</h2>
+            <h2 class='tonic-h2-modal wide-screen-views'>${card[0].name2}</h2>
+            <span class='tonic-project-close' onclick="popUp.classList.toggle('hide')">&times;</span>
+        </div>      
+        <ul class='works-headers tonic-project-modal-header-techs'>
+            <li class='title-header' style='margin-right: 50px;'>${card[0].title}</li>
+            <li><img src='images/works-dot.PNG' style='margin-right: 10px;' class='dot-separator' alt='Dot separator'></li>
+            <li class='title-header-general'  style='margin-right: 23px;'>${card[0].technology}</li>
+            <li><img src='images/works-dot.PNG' style='margin-right: 13px;' class='dot-separator' alt='Dot separator'></li>
+            <li class='title-header-general'>2015</li>
+        </ul>
+        <div class='tonic-project-modal-body'>
+            <figure class='img-wide-screen-modal'>
+                <img src='${card[0].img1}' class='works-image style-image small-screen-view' alt='Tonic App Screenshot'>
+                <img src='${card[0].img2}' class='wide-screen-view modal-pic-full' alt='Tonic project image Screenshot'>
+            </figure>
+        </div>
+        <section class='project-aside'>
+            <div class='project-aside-description'>
+                <p class='project-description-tonic small-screen-view-des'>
+                 ${card[0].description3}
+                </p>
+                <p class='project-description-tonic full-screen-view-des'>
+                 ${card[0].description2}
+                </p>
+            </div>
+            <div class='project-aside-languages'>
+                <section class='project-languages-tonic deskFlex'>
+                    <ul class='my-work-languages-tonic' id='language-list'>
+                      <li class='coding-languages'>${card[0].technologies[0]}</li>
+                      <li class='coding-languages'>${card[0].technologies[1]}</li>
+                      <li class='coding-languages'>${card[0].technologies[2]}</li>
+                    </ul>
+                    <ul class='my-work-languages-tonic' id='language-list'>
+                      <li class='coding-languages desktop'>${card[0].technologies[3]}</li>
+                      <li class='coding-languages desktop'>${card[0].technologies[4]}</li>
+                      <li class='coding-languages desktop'>${card[0].technologies[5]}</li>
+                    </ul>
+                </section>
+                <div class='tonic-project-modal-footer'>
+                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.png' alt='See source on Github' srcset=''></button>
+                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See Source</span> <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github' srcset=''></button>
+                </div>
+            </div>
+          </section>
+      </div>
+    </div>`;
+
+    popUpModalDiv.classList.toggle('hide');
+  });
+});
 
 form.addEventListener('submit', (e) => {
   const email = document.getElementById('email').value;
@@ -44,141 +207,6 @@ function getData() {
 }
 
 getData();
-
-const projectData = {
-  tonicProjectdata: {
-    name: 'Tonic',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
-    title: 'CANOPY',
-    category: 'Back End Dev',
-    languages: ['html', 'css', 'javascript'],
-    images: ['tonic-project.png', 'Snapshoot Portfolio.png'],
-  },
-  tonicProject2data: {
-    name: 'Tonic',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
-    title: 'FACEBOOK',
-    category: 'Back End Dev',
-    languages: ['html', 'css', 'javascript'],
-    images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
-  },
-  multipostProjectData: {
-    name: 'Multi-Post Stories',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
-    title: 'FACEBOOK',
-    category: 'Full stack',
-    languages: ['html', 'css', 'javascript'],
-    images: ['multi-post-stories-project.jpg', 'Snapshoot-Portfolio-2.png'],
-  },
-  multipostProject2Data: {
-    name: 'Multi-Post Stories',
-    description: ['Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting remaining essent', 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea'],
-    title: 'CANOPY',
-    category: 'Back End Dev',
-    languages: ['html', 'css', 'ruby on rails'],
-    images: ['tonic-2-project.jpg', 'Snapshoot-Portfolio-3.png'],
-  },
-};
-
-function modalPopup(data) {
-  menuBody.style.overflow = 'hidden';
-  tonicProjectModal.style.display = 'block';
-  tonicProjectModal.innerHTML += `
-    <div class='tonic-project-modal-content' id='tonic-project-modal'>
-    <div class='tonic-project-content'>
-        <div class='tonic-project-modal-header'>
-            <h2 class='tonic-h2'>${data[0]}</h2>
-            <span class='tonic-project-close' onClick="document.getElementById('modal-div').style.display = 'none';
-            document.getElementById('mobile-menu-body').style.overflow ='visible';">&times;</span>
-        </div>      
-        <ul class='works-headers tonic-project-modal-header-techs'>
-            <li class='title-header' style='margin-right: 50px;'>${data[1]}</li>
-            <li><img src='images/works-dot.PNG' style='margin-right: 10px;' class='dot-separator' alt='Dot separator'></li>
-            <li class='title-header-general'  style='margin-right: 23px;'>${data[2]}</li>
-            <li><img src='images/works-dot.PNG' style='margin-right: 13px;' class='dot-separator' alt='Dot separator'></li>
-            <li class='title-header-general'>2015</li>
-        </ul>
-        <div class='tonic-project-modal-body'>
-            <figure class='img-wide-screen-modal'>
-                <img src='images/${data[5][0]}' class='works-image style-image small-screen-view' alt='Tonic App Screenshot'>
-                <img src='images/${data[5][1]}' class='wide-screen-view modal-pic-full' alt='Tonic project image Screenshot'>
-            </figure>
-        </div>
-        <section class='project-aside'>
-            <div class='project-aside-description'>
-                <p class='project-description-tonic small-screen-view-des'>
-                 ${data[3][0]}
-                </p>
-                <p class='project-description-tonic full-screen-view-des'>
-                ${data[3][1]}
-                </p>
-            </div>
-            <div class='project-aside-languages'>
-                <section class='project-languages-tonic'>
-                    <ul class='my-work-languages-tonic' id='language-list'>
-                      <li class='coding-languages'>${data[4][0]}</li>
-                      <li class='coding-languages'>${data[4][1]}</li>
-                      <li class='coding-languages'>${data[4][2]}</li>
-                    </ul>
-                </section>
-                <div class='tonic-project-modal-footer'>
-                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.JPG' alt='See source on Github' srcset=''></button>
-                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See Source</span> <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github' srcset=''></button>
-                </div>
-            </div>
-        </section>
-    </div>
-  </div>
-  `;
-}
-
-tonicProject.addEventListener('click', () => {
-  const data = [
-    projectData.tonicProjectdata.name,
-    projectData.tonicProjectdata.title,
-    projectData.tonicProjectdata.category,
-    projectData.tonicProjectdata.description,
-    projectData.tonicProjectdata.languages,
-    projectData.tonicProjectdata.images,
-  ];
-  modalPopup(data);
-});
-
-tonicProject2.addEventListener('click', () => {
-  const data = [
-    projectData.tonicProject2data.name,
-    projectData.tonicProject2data.title,
-    projectData.tonicProject2data.category,
-    projectData.tonicProject2data.description,
-    projectData.tonicProject2data.languages,
-    projectData.tonicProject2data.images,
-  ];
-  modalPopup(data);
-});
-
-multipostProject.addEventListener('click', () => {
-  const data = [
-    projectData.multipostProjectData.name,
-    projectData.multipostProjectData.title,
-    projectData.multipostProjectData.category,
-    projectData.multipostProjectData.description,
-    projectData.multipostProjectData.languages,
-    projectData.multipostProjectData.images,
-  ];
-  modalPopup(data);
-});
-
-multipostProject2.addEventListener('click', () => {
-  const data = [
-    projectData.multipostProject2Data.name,
-    projectData.multipostProject2Data.title,
-    projectData.multipostProject2Data.category,
-    projectData.multipostProject2Data.description,
-    projectData.multipostProject2Data.languages,
-    projectData.multipostProject2Data.images,
-  ];
-  modalPopup(data);
-});
 
 window.addEventListener('resize', () => {
   if (window.matchMedia('(min-width: 768px)').matches) {
