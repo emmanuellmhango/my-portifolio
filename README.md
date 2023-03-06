@@ -16,8 +16,8 @@
 ## Web Link
 *[Click here to go to the website](https://emmanuellmhango.github.io/my-portifolio/)*
 ### My Contacts
-
-> Insta - [@mw_imma](https://www.instagram.com/mw_imma) | [emmanuellmhango@gmail.com](mailto://emmanuellmhango@gmail.com)
+- GitHub: [@emmanuellmhango](https://github.com/emmanuellmhango)
+- LinkedIn: [@emmanuel-mhango-421504a4](https://www.linkedin.com/in/emmanuel-mhango-421504a4)
 
 
 #### 📝 License
