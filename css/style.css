@@ -550,6 +550,11 @@ h4 {
   color: #172b4d;
 }
 
+.my-img {
+  width: 80px;
+  height: 70px;
+}
+
 .tonic-project-close {
   color: #67798e;
   font-size: 34px;

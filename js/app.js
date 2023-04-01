@@ -14,16 +14,16 @@ const form = document.getElementById('contact_form');
 const myPortfolioData = [
   {
     id: 1,
-    name1: 'Tonic',
-    name2: 'Tonic',
-    title: 'CANOPY',
-    technology: 'Back End Dev',
-    description1: 'A daily selection of privately personalized reads; no accounts or sign-ups required.',
+    name1: 'Budget Tracker',
+    name2: 'Budget Tracker',
+    title: 'RAILS APP',
+    technology: 'Full-Stack',
+    description1: 'Budget app is a mobile app used to keep track of all my purchase transactions.',
     description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
     description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
     img1: 'images/tonic-project.png',
     img2: 'images/Snapshoot Portfolio.png',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    technologies: ['html/css', 'Ruby on Rails', 'JavaScript', 'github', 'ruby', 'Bootstraps'],
     class1: 'my-works',
   },
   {
@@ -88,7 +88,7 @@ myPortfolioData.forEach((data) => {
                   <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
                   <li class="title-header-general">${data.technology}</li>
                   <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
-                  <li class="title-header-general">2015</li>
+                  <li class="title-header-general">2023</li>
               </ul>
               <p class="project-description">
                 ${data.description1}
