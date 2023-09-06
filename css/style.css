@@ -94,7 +94,7 @@ nav {
   color: #fff;
 }
 
-.menu-links-item>a {
+.menu-links-item > a {
   text-decoration: none;
   color: #fff;
 }
@@ -976,7 +976,6 @@ h4 {
 }
 
 @media (min-width: 768px) {
-
   .header-top,
   .choose-screen {
     display: none !important;
