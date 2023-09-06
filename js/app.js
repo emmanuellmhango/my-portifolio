@@ -14,59 +14,75 @@ const form = document.getElementById('contact_form');
 const myPortfolioData = [
   {
     id: 1,
-    name1: 'Budget Tracker',
-    name2: 'Budget Tracker',
-    title: 'RAILS APP',
+    name1: 'Car Rental App',
+    name2: 'Car Rental App',
+    title: 'Car Rental',
     technology: 'Full-Stack',
-    description1: 'Budget app is a mobile app used to keep track of all my purchase transactions.',
-    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    img1: 'images/tonic-project.png',
-    img2: 'images/Snapshoot Portfolio.png',
-    technologies: ['html/css', 'Ruby on Rails', 'JavaScript', 'github', 'ruby', 'Bootstraps'],
+    description1:
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails.',
+    description2:
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails',
+    description3:
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails',
+    img1: 'images/carrental.png',
+    img2: 'images/carrentallarge.png',
+    technologies: ['React', 'Ruby on Rails', 'JavaScript', 'github'],
     class1: 'my-works',
+    link: 'https://land-rover-e.netlify.app',
   },
   {
     id: 2,
-    name1: 'Multi-Post Stories',
-    name2: 'Multi-Post Stories',
-    title: 'FACEBOOK',
-    technology: 'Fullstack Dev',
-    description1: 'Experimental content creation feature that allows users to add to an existing story over the course of a day without spamming their friends',
-    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    img1: 'images/multi-post-stories-project.jpg',
-    img2: 'images/Snapshoot-Portfolio-3.png',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    class1: 'my-worksRev',
+    name1: 'Space Travelers Hub',
+    name2: 'Space Travelers Hub',
+    title: 'Space Hub',
+    technology: 'Full-Stack',
+    description1:
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
+    description2:
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
+    description3:
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
+    img1: 'images/space.jpg',
+    img2: 'images/spacelarge.png',
+    technologies: ['HTML', 'React', 'Redux'],
+    class1: 'my-works',
+    link: 'https://jellywiz.github.io/space-travlers/',
   },
   {
     id: 3,
-    name1: 'Tonic',
-    name2: 'Facebook 360',
-    title: 'FACEBOOK',
-    technology: 'Back End Dev',
-    description1: 'Exploring the future of media in Facebooks first Virtual Reality app; a place to discover and enjoy 360 photos and videos on Gear VR.',
-    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    img1: 'images/tonic-2-project.jpg',
-    img2: 'images/Snapshoot-Portfolio-2.png',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
+    name1: 'Claims Support',
+    name2: 'Claims Support',
+    title: 'TAGET App',
+    technology: 'Full-Stack',
+    description1:
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
+    description2:
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
+    description3:
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
+    img1: 'images/claims.jpg',
+    img2: 'images/claimslarge.jpg',
+    technologies: ['React', 'Ruby on Rails', 'CSS'],
     class1: 'my-works',
+    link: 'https://claims-app.onrender.com/',
   },
   {
     id: 4,
-    name1: 'Multi-Post Stories',
-    name2: 'Uber Navigation',
-    title: 'CANOPY',
-    technology: 'Back End Dev',
-    description1: 'A smart assistant to make driving more safe, efficient, and fun by unlocking your most expensive computer: your car.',
-    description2: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the releorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum han printer took a galley of type and scrambled it 1960s with the releawn printer took a galley of type and scrambled it 1960s with the releaLorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it 1960s with the relea',
-    description3: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essent',
-    img1: 'images/multi-post-stories-2-project.jpg',
-    img2: 'images/Snapshoot-Portfolio-4.png',
-    technologies: ['html', 'css', 'javascript', 'github', 'ruby', 'Bootstraps'],
-    class1: 'my-worksRev',
+    name1: 'TAGET Tagging App',
+    name2: 'TAGET Tagging App',
+    title: 'Mobile App',
+    technology: 'Full-Stack',
+    description1:
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
+    description2:
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
+    description3:
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
+    img1: 'images/tagetapp.png',
+    img2: 'images/tagetapp.png',
+    technologies: ['React Native', 'Redux', 'Expo'],
+    class1: 'my-works',
+    links: '#',
   },
 ];
 
@@ -84,25 +100,27 @@ myPortfolioData.forEach((data) => {
               <h3 class="my-works-project-title small-screen-view-none">${data.name1}</h3>
               <h3 class="my-works-project-title wide-screen-view-title">${data.name2}</h3>
               <ul class="works-headers">
-                  <li class="title-header">${data.title}</li>
-                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
-                  <li class="title-header-general">${data.technology}</li>
-                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
-                  <li class="title-header-general">2023</li>
+                <li class="title-header">${data.title}</li>
+                <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                <li class="title-header">${data.technology}</li>
+                <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                <li class="title-header">2023</li>
               </ul>
               <p class="project-description">
                 ${data.description1}
               </p>
           </div>
           <section class="project-languages">
-              <ul class="my-work-languages">
-                  <li class="coding-languages">${data.technologies[0]}</li>
-                  <li class="coding-languages">${data.technologies[1]}</li>
-                  <li class="coding-languages">${data.technologies[2]}</li>
-              </ul>
+            <ul class="my-work-languages">
+              <li class="coding-languages">${data.technologies[0]}</li>
+              <li class="coding-languages">${data.technologies[1]}</li>
+              <li class="coding-languages">${data.technologies[2]}</li>
+            </ul>
           </section>
           <section class="project-more">
-              <button class="works-see-more" type="button" name="${data.id}">See Project</button>
+              <a href="${data.link}" target="_blank">
+                <button class="works-see-more" type="button" name="${data.id}">See Project</button>
+              </a>
           </section>
       </div>
     </div>
