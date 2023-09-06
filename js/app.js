@@ -1,92 +1,92 @@
-const menu = document.getElementById("mobile-menu");
-const menuModal = document.getElementById("myMenuModal");
-const menuClose = document.getElementById("closeBtn");
-const menuItemAbout = document.getElementById("menu-links-item-about");
-const menuItemPortfolio = document.getElementById("menu-links-item-portfolio");
-const menuItemContact = document.getElementById("menu-links-item-contact");
-const menuBody = document.getElementById("mobile-menu-body");
-const menuBlur = document.getElementById("mobile-menu-blur");
-const menuHeaderTop = document.getElementById("menu-header-top");
-const menuLogo = document.getElementById("menu-logo");
-const errorDiv = document.getElementById("error-output");
-const form = document.getElementById("contact_form");
+const menu = document.getElementById('mobile-menu');
+const menuModal = document.getElementById('myMenuModal');
+const menuClose = document.getElementById('closeBtn');
+const menuItemAbout = document.getElementById('menu-links-item-about');
+const menuItemPortfolio = document.getElementById('menu-links-item-portfolio');
+const menuItemContact = document.getElementById('menu-links-item-contact');
+const menuBody = document.getElementById('mobile-menu-body');
+const menuBlur = document.getElementById('mobile-menu-blur');
+const menuHeaderTop = document.getElementById('menu-header-top');
+const menuLogo = document.getElementById('menu-logo');
+const errorDiv = document.getElementById('error-output');
+const form = document.getElementById('contact_form');
 
 const myPortfolioData = [
   {
     id: 1,
-    name1: "Car Rental App",
-    name2: "Car Rental App",
-    title: "Car Rental",
-    technology: "Full-Stack",
+    name1: 'Car Rental App',
+    name2: 'Car Rental App',
+    title: 'Car Rental',
+    technology: 'Full-Stack',
     description1:
-      "The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails.",
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails.',
     description2:
-      "The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails",
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails',
     description3:
-      "The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails",
-    img1: "images/carrental.png",
-    img2: "images/carrentallarge.png",
-    technologies: ["React", "Ruby on Rails", "JavaScript", "github"],
-    class1: "my-works",
-    link: "https://land-rover-e.netlify.app",
+      'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails',
+    img1: 'images/carrental.png',
+    img2: 'images/carrentallarge.png',
+    technologies: ['React', 'Ruby on Rails', 'JavaScript', 'github'],
+    class1: 'my-works',
+    link: 'https://land-rover-e.netlify.app',
   },
   {
     id: 2,
-    name1: "Space Travelers Hub",
-    name2: "Space Travelers Hub",
-    title: "Space Hub",
-    technology: "Full-Stack",
+    name1: 'Space Travelers Hub',
+    name2: 'Space Travelers Hub',
+    title: 'Space Hub',
+    technology: 'Full-Stack',
     description1:
-      "Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.",
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
     description2:
-      "Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.",
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
     description3:
-      "Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.",
-    img1: "images/space.jpg",
-    img2: "images/spacelarge.png",
-    technologies: ["HTML", "React", "Redux"],
-    class1: "my-works",
-    link: "https://jellywiz.github.io/space-travlers/",
+      'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
+    img1: 'images/space.jpg',
+    img2: 'images/spacelarge.png',
+    technologies: ['HTML', 'React', 'Redux'],
+    class1: 'my-works',
+    link: 'https://jellywiz.github.io/space-travlers/',
   },
   {
     id: 3,
-    name1: "Claims Support",
-    name2: "Claims Support",
-    title: "TAGET App",
-    technology: "Full-Stack",
+    name1: 'Claims Support',
+    name2: 'Claims Support',
+    title: 'TAGET App',
+    technology: 'Full-Stack',
     description1:
-      "The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React",
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
     description2:
-      "The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React",
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
     description3:
-      "The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React",
-    img1: "images/claims.jpg",
-    img2: "images/claimslarge.jpg",
-    technologies: ["React", "Ruby on Rails", "CSS"],
-    class1: "my-works",
-    link: "https://claims-app.onrender.com/",
+      'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
+    img1: 'images/claims.jpg',
+    img2: 'images/claimslarge.jpg',
+    technologies: ['React', 'Ruby on Rails', 'CSS'],
+    class1: 'my-works',
+    link: 'https://claims-app.onrender.com/',
   },
   {
     id: 4,
-    name1: "TAGET Tagging App",
-    name2: "TAGET Tagging App",
-    title: "Mobile App",
-    technology: "Full-Stack",
+    name1: 'TAGET Tagging App',
+    name2: 'TAGET Tagging App',
+    title: 'Mobile App',
+    technology: 'Full-Stack',
     description1:
-      "The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React",
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
     description2:
-      "The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React",
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
     description3:
-      "The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React",
-    img1: "images/tagetapp.png",
-    img2: "images/tagetapp.png",
-    technologies: ["React Native", "Redux", "Expo"],
-    class1: "my-works",
-    links: "#",
+      'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
+    img1: 'images/tagetapp.png',
+    img2: 'images/tagetapp.png',
+    technologies: ['React Native', 'Redux', 'Expo'],
+    class1: 'my-works',
+    links: '#',
   },
 ];
 
-const portfolioProjects = document.getElementById("portfolio");
+const portfolioProjects = document.getElementById('portfolio');
 
 myPortfolioData.forEach((data) => {
   portfolioProjects.innerHTML += `
@@ -128,11 +128,11 @@ myPortfolioData.forEach((data) => {
 });
 
 portfolioProjects.innerHTML += '<div id="popUp" class="popUp hide"></div>';
-const modalProject = document.querySelectorAll(".works-see-more");
-const popUpModalDiv = document.getElementById("popUp");
+const modalProject = document.querySelectorAll('.works-see-more');
+const popUpModalDiv = document.getElementById('popUp');
 modalProject.forEach((proj) => {
-  proj.addEventListener("click", () => {
-    const name = parseInt(proj.getAttribute("name"), 10);
+  proj.addEventListener('click', () => {
+    const name = parseInt(proj.getAttribute('name'), 10);
     const card = myPortfolioData.filter((item) => {
       if (item.id === name) {
         return item;
@@ -193,90 +193,90 @@ modalProject.forEach((proj) => {
       </div>
     </div>`;
 
-    popUpModalDiv.classList.toggle("hide");
+    popUpModalDiv.classList.toggle('hide');
   });
 });
 
-form.addEventListener("submit", (e) => {
-  const email = document.getElementById("email").value;
+form.addEventListener('submit', (e) => {
+  const email = document.getElementById('email').value;
   if (email !== email.toLowerCase()) {
-    errorDiv.innerHTML = "Oops! the email should be in lowercase";
+    errorDiv.innerHTML = 'Oops! the email should be in lowercase';
     e.preventDefault();
   }
 });
 
-form.addEventListener("keyup", () => {
+form.addEventListener('keyup', () => {
   const data = {
-    name: document.getElementById("name").value,
-    email: document.getElementById("email").value,
-    message: document.getElementById("message").value,
+    name: document.getElementById('name').value,
+    email: document.getElementById('email').value,
+    message: document.getElementById('message').value,
   };
-  localStorage.setItem("data", JSON.stringify(data));
+  localStorage.setItem('data', JSON.stringify(data));
 });
 
 function getData() {
-  const data = JSON.parse(localStorage.getItem("data"));
+  const data = JSON.parse(localStorage.getItem('data'));
 
   if (data) {
-    document.getElementById("name").value = data.name;
-    document.getElementById("email").value = data.email;
-    document.getElementById("message").value = data.message;
+    document.getElementById('name').value = data.name;
+    document.getElementById('email').value = data.email;
+    document.getElementById('message').value = data.message;
   }
 }
 
 getData();
 
-window.addEventListener("resize", () => {
-  if (window.matchMedia("(min-width: 768px)").matches) {
-    menuModal.style.display = "none";
-    menu.style.display = "block";
-    menuBody.style.overflowY = "visible";
-    menuBlur.style.filter = "blur(0)";
-    menuLogo.style.filter = "blur(0)";
+window.addEventListener('resize', () => {
+  if (window.matchMedia('(min-width: 768px)').matches) {
+    menuModal.style.display = 'none';
+    menu.style.display = 'block';
+    menuBody.style.overflowY = 'visible';
+    menuBlur.style.filter = 'blur(0)';
+    menuLogo.style.filter = 'blur(0)';
   }
 });
 
-menuClose.addEventListener("click", () => {
-  menuModal.style.display = "none";
-  menu.style.display = "block";
-  menuBody.style.overflowY = "visible";
-  menuBlur.style.filter = "blur(0)";
-  menuLogo.style.filter = "blur(0)";
-  menuHeaderTop.style.display = "flex";
+menuClose.addEventListener('click', () => {
+  menuModal.style.display = 'none';
+  menu.style.display = 'block';
+  menuBody.style.overflowY = 'visible';
+  menuBlur.style.filter = 'blur(0)';
+  menuLogo.style.filter = 'blur(0)';
+  menuHeaderTop.style.display = 'flex';
 });
 
-menu.addEventListener("click", () => {
-  menuModal.style.display = "block";
-  menu.style.display = "none";
-  menuBody.style.overflowY = "hidden";
-  menuBlur.style.filter = "blur(5px)";
-  menuLogo.style.filter = "blur(5px)";
-  menuHeaderTop.style.display = "none";
+menu.addEventListener('click', () => {
+  menuModal.style.display = 'block';
+  menu.style.display = 'none';
+  menuBody.style.overflowY = 'hidden';
+  menuBlur.style.filter = 'blur(5px)';
+  menuLogo.style.filter = 'blur(5px)';
+  menuHeaderTop.style.display = 'none';
 });
 
-menuItemAbout.addEventListener("click", () => {
-  menuModal.style.display = "none";
-  menu.style.display = "block";
-  menuBody.style.overflowY = "visible";
-  menuBlur.style.filter = "blur(0)";
-  menuLogo.style.filter = "blur(0)";
-  menuHeaderTop.style.display = "flex";
+menuItemAbout.addEventListener('click', () => {
+  menuModal.style.display = 'none';
+  menu.style.display = 'block';
+  menuBody.style.overflowY = 'visible';
+  menuBlur.style.filter = 'blur(0)';
+  menuLogo.style.filter = 'blur(0)';
+  menuHeaderTop.style.display = 'flex';
 });
 
-menuItemContact.addEventListener("click", () => {
-  menuModal.style.display = "none";
-  menu.style.display = "block";
-  menuBody.style.overflowY = "visible";
-  menuBlur.style.filter = "blur(0)";
-  menuLogo.style.filter = "blur(0)";
-  menuHeaderTop.style.display = "flex";
+menuItemContact.addEventListener('click', () => {
+  menuModal.style.display = 'none';
+  menu.style.display = 'block';
+  menuBody.style.overflowY = 'visible';
+  menuBlur.style.filter = 'blur(0)';
+  menuLogo.style.filter = 'blur(0)';
+  menuHeaderTop.style.display = 'flex';
 });
 
-menuItemPortfolio.addEventListener("click", () => {
-  menuModal.style.display = "none";
-  menu.style.display = "block";
-  menuBody.style.overflowY = "visible";
-  menuBlur.style.filter = "blur(0)";
-  menuLogo.style.filter = "blur(0)";
-  menuHeaderTop.style.display = "flex";
+menuItemPortfolio.addEventListener('click', () => {
+  menuModal.style.display = 'none';
+  menu.style.display = 'block';
+  menuBody.style.overflowY = 'visible';
+  menuBlur.style.filter = 'blur(0)';
+  menuLogo.style.filter = 'blur(0)';
+  menuHeaderTop.style.display = 'flex';
 });
