@@ -32,8 +32,8 @@ const myPortfolioData = [
   },
   {
     id: 2,
-    name1: 'Space Travelers Hub',
-    name2: 'Space Travelers Hub',
+    name1: 'Space Travel Hub',
+    name2: 'Space Travel Hub',
     title: 'Space Hub',
     technology: 'Full-Stack',
     description1:
@@ -42,7 +42,7 @@ const myPortfolioData = [
       'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
     description3:
       'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
-    img1: 'images/space.jpg',
+    img1: 'images/space.png',
     img2: 'images/spacelarge.png',
     technologies: ['HTML', 'React', 'Redux'],
     class1: 'my-works',
@@ -68,8 +68,8 @@ const myPortfolioData = [
   },
   {
     id: 4,
-    name1: 'TAGET Tagging App',
-    name2: 'TAGET Tagging App',
+    name1: 'Tagging App',
+    name2: 'Tagging App',
     title: 'Mobile App',
     technology: 'Full-Stack',
     description1:
