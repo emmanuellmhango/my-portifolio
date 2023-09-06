@@ -12,6 +12,11 @@ body {
   overflow-x: hidden;
 }
 
+.socialLogo {
+  font-size: 24px;
+  color: rgb(30, 48, 80);
+}
+
 nav {
   display: flex;
   align-items: center;
@@ -215,7 +220,6 @@ li.links-transition:focus {
 .headline {
   display: flex;
   flex-direction: column;
-  margin-top: 114px;
   padding-bottom: 136px;
 }
 
@@ -232,8 +236,7 @@ li.links-transition:focus {
 }
 
 .headline-background {
-  background: url("../images/header-shape.png") no-repeat center bottom/cover;
-  background-size: auto;
+  background-color: #fff;
 }
 
 .introduction {
@@ -632,7 +635,7 @@ h4 {
 }
 
 .title-header {
-  width: 55px;
+  width: 20%;
   font-family: 'Poppins', sans-serif;
   font-style: normal;
   font-weight: 600;
@@ -913,6 +916,7 @@ h4 {
   border: 1px solid #7f8cff;
   margin-bottom: 50px;
   transition: all 0.5s ease-out;
+  cursor: pointer;
 }
 
 .wide-screen-view-title {
@@ -936,6 +940,7 @@ h4 {
   background: #6070ff;
   box-shadow: 0 8px 16px rgba(64, 83, 252, 0.24);
   border-radius: 8px;
+  cursor: pointer;
 }
 
 .modal-pic-full {
@@ -1011,7 +1016,7 @@ h4 {
     display: flex;
     flex-direction: column;
     padding-bottom: 255px;
-    margin: 25px 154px 0 154px;
+    margin: 0 154px 0 154px;
     z-index: 8;
   }
 
@@ -1071,6 +1076,7 @@ h4 {
     margin-left: auto;
     margin-right: auto;
     padding-right: 20px;
+    width: 80%;
   }
 
   .my-skills {
@@ -1113,9 +1119,7 @@ h4 {
   .my-works-project-title {
     font-weight: 700;
     font-size: 40px;
-    line-height: 52px;
-    margin-top: 48px;
-    height: 46px;
+    margin-top: 10px;
     width: 496px;
     color: #091e42;
   }
@@ -1145,7 +1149,7 @@ h4 {
   }
 
   .title-header {
-    width: 60px;
+    width: 20%;
     height: 24px;
     font-size: 18px;
     line-height: 24px;
@@ -1178,11 +1182,9 @@ h4 {
 
   .project-description {
     width: 496px;
-    height: 50px;
     font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    margin-top: 32px;
+    margin-top: 10px;
   }
 
   .dot-separator {
