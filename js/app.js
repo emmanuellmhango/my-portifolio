@@ -82,7 +82,7 @@ const myPortfolioData = [
     img2: 'images/tagetapp.png',
     technologies: ['React Native', 'Redux', 'Expo'],
     class1: 'my-works',
-    links: '#',
+    links: 'https://github.com/emmanuellmhango/taget-app',
   },
 ];
 
