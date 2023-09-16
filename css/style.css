@@ -21,6 +21,32 @@ body {
   overflow-x: hidden;
 }
 
+.space-up-abit {
+  padding-top: 10px;
+}
+
+.projects-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.proj-button {
+  width: 200px;
+  padding: 20px;
+  background-color: rgba(96, 112, 255, 0.5);
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.proj-button:hover {
+  cursor: pointer;
+  background-color: rgba(96, 112, 255, 0.8);
+}
+
 .header-wrapper-div {
   width: 100%;
   background-image: url('../images/background.png');
