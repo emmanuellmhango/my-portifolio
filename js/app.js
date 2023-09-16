@@ -90,40 +90,49 @@ const portfolioProjects = document.getElementById('portfolio');
 
 myPortfolioData.forEach((data) => {
   portfolioProjects.innerHTML += `
-   <div class="${data.class1}">
-      <figure class="img-wide-screen">
-          <img src="${data.img1}" class="works-image small-screen-view " alt="Tonic App Screenshot" width="100%">
-          <img src="${data.img2}" alt="Tonic project image Screenshot" class="wide-screen-view">
-      </figure>
-      <div class="wider-screen-project-definition">
-          <div class="works-description">
-              <h3 class="my-works-project-title small-screen-view-none">${data.name1}</h3>
-              <h3 class="my-works-project-title wide-screen-view-title">${data.name2}</h3>
-              <ul class="works-headers">
-                <li class="title-header">${data.title}</li>
-                <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
-                <li class="title-header">${data.technology}</li>
-                <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
-                <li class="title-header">2023</li>
+    <div class="${data.class1} space-up-abit" id="portfolio-${data.id}">
+        <figure class="img-wide-screen">
+            <img src="${data.img1}" class="works-image small-screen-view " alt="Tonic App Screenshot" width="100%">
+            <img src="${data.img2}" alt="Tonic project image Screenshot" class="wide-screen-view">
+        </figure>
+        <div class="wider-screen-project-definition">
+            <div class="works-description">
+                <h3 class="my-works-project-title small-screen-view-none">${data.name1}</h3>
+                <h3 class="my-works-project-title wide-screen-view-title">${data.name2}</h3>
+                <ul class="works-headers">
+                  <li class="title-header">${data.title}</li>
+                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                  <li class="title-header">${data.technology}</li>
+                  <li><img src="images/works-dot.PNG" class="dot-separator" alt="Dot separator"></li>
+                  <li class="title-header">2023</li>
+                </ul>
+                <p class="project-description">
+                  ${data.description1}
+                </p>
+            </div>
+            <section class="project-languages">
+              <ul class="my-work-languages">
+                <li class="coding-languages">${data.technologies[0]}</li>
+                <li class="coding-languages">${data.technologies[1]}</li>
+                <li class="coding-languages">${data.technologies[2]}</li>
               </ul>
-              <p class="project-description">
-                ${data.description1}
-              </p>
-          </div>
-          <section class="project-languages">
-            <ul class="my-work-languages">
-              <li class="coding-languages">${data.technologies[0]}</li>
-              <li class="coding-languages">${data.technologies[1]}</li>
-              <li class="coding-languages">${data.technologies[2]}</li>
-            </ul>
-          </section>
-          <section class="project-more">
-              <a>
-                <button class="works-see-more" type="button" name="${data.id}">See Project</button>
-              </a>
-          </section>
+            </section>
+            <section class="project-more">
+                <a>
+                  <button class="works-see-more" type="button" name="${data.id}">See Project</button>
+                </a>
+            </section>
+        </div>
       </div>
-    </div>
+      <!--
+        <div class="projects-button">
+            <a href="#portfolio-${data.id + 1}">
+                <button class="proj-button"> See Next Project <br />
+                    <i class="fa-solid fa-chevron-down space-up-abit"></i>
+                </button>
+            </a>
+        </div>
+      -->
   `;
 });
 
