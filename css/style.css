@@ -21,6 +21,12 @@ body {
   overflow-x: hidden;
 }
 
+.header-wrapper-div {
+  width: 100%;
+  background-image: url('../images/background.png');
+  background-size: cover;
+}
+
 .socialLogo {
   font-size: 24px;
   color: rgb(30, 48, 80);

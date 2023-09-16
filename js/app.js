@@ -26,7 +26,7 @@ const myPortfolioData = [
       'The car rental app is a responsive application that displays a list of vehicles and lets people rent their favorite car. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components. The App fetches data from the back end which is built using Ruby on Rails',
     img1: 'images/carrental.png',
     img2: 'images/carrentallarge.png',
-    technologies: ['React', 'Ruby on Rails', 'JavaScript', 'github'],
+    technologies: ['React', 'Ruby on Rails', 'JavaScript', 'GitHub', 'HTML5', 'CSS3'],
     class1: 'my-works',
     link: 'https://land-rover-e.netlify.app',
   },
@@ -44,7 +44,7 @@ const myPortfolioData = [
       'Space Travelers Hub is a single-page app (SPA) that displays a list of Rockets & Missions by fetching live data from SpaceX API. SpaceX is a company that provides commercial and scientific space travel services. The application allows users to reserve/cancel rockets and join/leave space missions. Built with React and Redux, styled through React basic styling, and used React testing library and jest snapshots to test all the components.',
     img1: 'images/space.png',
     img2: 'images/spacelarge.png',
-    technologies: ['HTML', 'React', 'Redux'],
+    technologies: ['JavaScript', 'React', 'Redux','HTML5', 'CSS3', 'GitHub'],
     class1: 'my-works',
     link: 'https://jellywiz.github.io/space-travlers/',
   },
@@ -62,7 +62,7 @@ const myPortfolioData = [
       'The Claims support dashboard is an app that displays the data and provides analytics for the incidents recorded and tagged places brought to the attention of authorities. The super user can see the tagged places, and incidents recorded, and reject/forward them to the authorities responsible for handling that incident. The super user can also add/delete stakeholders of the project. The app is built using React',
     img1: 'images/claims.jpg',
     img2: 'images/claimslarge.jpg',
-    technologies: ['React', 'Ruby on Rails', 'CSS'],
+    technologies: ['JavaScript', 'React', 'Ruby on Rails', 'CSS', 'Redux', 'GitHub'],
     class1: 'my-works',
     link: 'https://claims-app.onrender.com/',
   },
@@ -80,9 +80,9 @@ const myPortfolioData = [
       'The TAGET Tagging app is an app that lets users notify their authorities about incidents in their cities. The incidents include fires, gas leaks, road accidents, infrastructure damage, etc. The user can take pictures, write the problem, and then submit it.The geo-location of place where the user takes the images from is tagged. The app is built using React',
     img1: 'images/tagetapp.png',
     img2: 'images/tagetapp.png',
-    technologies: ['React Native', 'Redux', 'Expo'],
+    technologies: ['React Native', 'Redux', 'Expo', 'React', 'JavaScript', 'GitHub', 'CSS3'],
     class1: 'my-works',
-    links: 'https://github.com/emmanuellmhango/taget-app',
+    link: 'https://github.com/emmanuellmhango/taget-app',
   },
 ];
 
@@ -118,7 +118,7 @@ myPortfolioData.forEach((data) => {
             </ul>
           </section>
           <section class="project-more">
-              <a href="${data.link}" target="_blank">
+              <a>
                 <button class="works-see-more" type="button" name="${data.id}">See Project</button>
               </a>
           </section>
@@ -130,6 +130,7 @@ myPortfolioData.forEach((data) => {
 portfolioProjects.innerHTML += '<div id="popUp" class="popUp hide"></div>';
 const modalProject = document.querySelectorAll('.works-see-more');
 const popUpModalDiv = document.getElementById('popUp');
+const popUpModalDivBg = document.getElementById('mobile-menu-body');
 modalProject.forEach((proj) => {
   proj.addEventListener('click', () => {
     const name = parseInt(proj.getAttribute('name'), 10);
@@ -139,10 +140,9 @@ modalProject.forEach((proj) => {
       }
       return false;
     });
-
+    popUpModalDivBg.style.overflowY = 'hidden';
     popUpModalDiv.innerHTML = `
     <div class="popUp-content">
-    
     <div class='tonic-project-content'>
         <div class='tonic-project-modal-header'>
             <h2 class='tonic-h2-modal small-screen-view'>${card[0].name1}</h2>
@@ -185,8 +185,9 @@ modalProject.forEach((proj) => {
                     </ul>
                 </section>
                 <div class='tonic-project-modal-footer'>
-                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See live</span> <img class='tonic-see-live-img' src='./images/live.png' alt='See source on Github' srcset=''></button>
-                    <button class='tonic-see-live'><span class='tonic-see-live-text'>See Source</span> <img class='tonic-see-live-img' src='./images/cat.png' alt='See source on Github' srcset=''></button>
+                  <a href="${card[0].link}" target="_blank">
+                    <button class="works-see-more" type="button" name="${card[0].id}">See Project</button>
+                  </a>
                 </div>
             </div>
           </section>
