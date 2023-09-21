@@ -73,6 +73,10 @@ nav {
   width: 40px;
 }
 
+.icon-space-small {
+  width: 10px;
+}
+
 .hide {
   display: none;
 }
